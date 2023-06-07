@@ -698,5 +698,404 @@
         "Answer5": "243",
         "Answer": "b",
         "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Ce afisează următoarea secventă de cod?",
+        "Answer1": "45 4",
+        "Answer2": "51 10",
+        "Answer3": "Eroare la executie deoarece variabila y nu este definită",
+        "Answer4": "Eroare la compilare deoarece functia este apelată fără argumente",
+        "Answer5": "None",
+        "Answer": "a",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Considerând secventa de cod: s = ''Timisoara'' Care dintre secventele de cod de mai jos returnează sirul de caractere 'aom'?",
+        "Answer1": "s[::-3]",
+        "Answer2": "s[::2]",
+        "Answer3": "s[-1:3:1]",
+        "Answer4": "[i for i in s if i in 'aom']",
+        "Answer5": "''.join([i for i in s if i in 'aom'])",
+        "Answer": "a",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Care este valoarea expresiei: 1 + 2 ** 3 * 4",
+        "Answer1": "33",
+        "Answer2": "4097",
+        "Answer3": "36",
+        "Answer4": "108",
+        "Answer5": "42",
+        "Answer": "a",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Este sigur să folosim operatorul == pentru a verifica dacă două variabile de tip float sunt egale?",
+        "Answer1": "Nu deoarece reprezentarea internă a valorilor de tip float nu este precisă",
+        "Answer2": "Da, bineînțeles",
+        "Answer3": "Nu, operatorul pentru comparație este !=",
+        "Answer4": "Da, deoarece reprezentarea în virgulă mobilă asigură precizia necesară",
+        "Answer5": "Da, Python asigură aproximările necesare comparării valorilor de tip float",
+        "Answer": "a",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Care dintre opțiunile de mai jos reprezintă o inițializare corectă a unui dicționar?",
+        "Answer1": "d = ('nume': 'valoare')",
+        "Answer2": "d = 'nume': 'valoare'",
+        "Answer3": "d = {'nume':'valoare'}",
+        "Answer4": "d = ['nume'='valoare']",
+        "Answer": "c",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Care este rezultatul execuției următoarei secvențe de cod?",
+        "Answer1": "11",
+        "Answer2": "12",
+        "Answer3": "21",
+        "Answer4": "22",
+        "Answer5": "33",
+        "Answer": "b",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Fie următoarea secvență de cod: Cum putem apela metoda salut() din clasa Persoana?",
+        "Answer1": "Persoana.salut(prof1)",
+        "Answer2": "prof1.salut()",
+        "Answer3": "super(prof1).salut()",
+        "Answer4": "Persoana(prof1).salut()",
+        "Answer5": "Nu putem apela metoda salut() din clasa Persoana deoarece este supraîncărcată în clasa Profesor",
+        "Answer": "a,d",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Care este rezultatul execuției următoarei secvențe de cod?",
+        "Answer1": "Doar metoda __init__ din clasa B este invocată",
+        "Answer2": "Metoda __init__ din clasa A este invocată și se afișează 'i from B is 0'.",
+        "Answer3": "Metoda __init__ din clasa A este invocată și se afișează 'i from B is 60'.",
+        "Answer4": "Metoda __init__ din clasa A este invocată și se afișează 'i from B is 90'.",
+        "Answer": "d",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Când este executată clauza finally dintr-un bloc try:   except:",
+        "Answer1": "când nu are loc nicio excepție",
+        "Answer2": "când are loc o excepție",
+        "Answer3": "tot timpul",
+        "Answer4": "doar dacă o anumită condiție specificată este îndeplinită",
+        "Answer5": "niciodată",
+        "Answer": "c",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Care dintre variantele de mai jos deschide un fișier pentru scriere?",
+        "Answer1": "output_file = open('hello.txt', 'r')",
+        "Answer2": "output_file = open('hello.txt', 'w')",
+        "Answer3": "output_file = openFile('hello.txt', 'w')",
+        "Answer4": "output_file = File('hello.txt', 'w')",
+        "Answer5": "output_file = open(''hello.txt'', encoding=''utf8'')",
+        "Answer": "b",
+        "Category": "Limbajul Python"
+    },
+    {
+        "QuestionTitle": "Fie următoarea secvență de cod: #define swap(a,b) {int aux; aux=a; a=b; b=aux;} float x=10.5, y=3.75; în urma apelului swap(x, y); valorile variabilelor x, respectiv y vor fi:",
+        "Answer1": "x=3.75, y=10.5",
+        "Answer2": "x=3.0, y=10.5",
+        "Answer3": "x=3.75, y=10.0",
+        "Answer4": "x=3.0, y=10.0",
+        "Answer": "c",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Ce reprezintă domeniul de vizibilitate a unei variabile?",
+        "Answer1": "plaja de valori pe care le poate lua",
+        "Answer2": "locul unde se creează",
+        "Answer3": "locul din textul sursă unde poate fi folosită",
+        "Answer4": "dacă are semn sau nu",
+        "Answer": "c",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "La execuţia programului următor se tastează 20. Ce se va afişa după execuţie? #include <stdio.h>\nvoid main() {\nchar a; scanf(\"%c\",&a); printf(\"%c\",a); }",
+        "Answer1": "20",
+        "Answer2": "2",
+        "Answer3": "0",
+        "Answer": "b",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Care este rezultatul numeric al evaluării expresiei: a<b<c dacă a=-2, b=-1 si c=0?",
+        "Answer1": "1",
+        "Answer2": "TRUE",
+        "Answer3": "0",
+        "Answer4": "FALSE",
+        "Answer": "c",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Ce se va afişa în urma execuţiei secvenţei următoare: #include <stdio.h>\nvoid main() { unsigned char x=25; x=x<<2; printf(\"%d\",(int)x); }",
+        "Answer1": "27",
+        "Answer2": "100",
+        "Answer3": "23",
+        "Answer": "b",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Ce afişează programul? #include <stdio.h>\nvoid main() { int x,y,z; x=y=z=4; printf(\"%d\",(x<<z)-(x|y)+(z&y));}",
+        "Answer1": "64",
+        "Answer2": "4",
+        "Answer3": "0",
+        "Answer4": "5",
+        "Answer5": "33",
+        "Answer6": "32",
+        "Answer": "a",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Care din următoarele variante reprezintă modalități de comunicare între funcții?",
+        "Answer1": "apel",
+        "Answer2": "prin variabile locale",
+        "Answer3": "prin argumentele actuale",
+        "Answer4": "prin valoarea returnată",
+        "Answer5": "prin variabile globale",
+        "Answer6": "prin includere",
+        "Answer": "c,d,e",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Ce este contextul de apel al unei funcții?",
+        "Answer1": "lista argumentelor formale",
+        "Answer2": "o zonă de memorie (de pe stivă)",
+        "Answer3": "locul din textul sursă în care se apelează",
+        "Answer4": "instrucțiunile (definiția funcției)",
+        "Answer": "b",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Care este valoarea variabilei n după execuția secvenței: char t[ ]=\"timisoara\", *p,*q,n; p=q=t; while(*(q++)); n=q-p;",
+        "Answer1": "n=0",
+        "Answer2": "n=9",
+        "Answer3": "n=10",
+        "Answer4": "n='\\0'-'t'",
+        "Answer": "c",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Ce reprezintă declarația: int *(*f)(int *)? (i) funcţie ce primeşte argument pointer la întreg şi întoarce pointer la întreg ; \n(ii) o declaraţie greşită; \n(iii) pointer către o funcţie care aşteaptă ca argument un pointer la int şi întoarce un pointer la int; \n(iv) pointer către o funcţie care întoarce un int",
+        "Answer1": "i",
+        "Answer2": "ii",
+        "Answer3": "iii",
+        "Answer4": "iv",
+        "Answer5": "nici una",
+        "Answer6": "toate",
+        "Answer7": "i şi iv",
+        "Answer": "c",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Ce se afișează în urma executării următoarei secvențe de cod? #include <stdio.h>\nvoid main() { char *u[2]={\"abc\",\"def\"}, **v; v=&u[0]; printf(\"%c\",(*v)[1]); }",
+        "Answer1": "a",
+        "Answer2": "b",
+        "Answer3": "c",
+        "Answer4": "d",
+        "Answer5": "e",
+        "Answer6": "f",
+        "Answer7": "abc",
+        "Answer": "b",
+        "Category": "Limbajul C"
+    },
+    {
+        "QuestionTitle": "Un constructor se caracterizează prin următoarele proprietăţi în limbajele C++/Java:",
+        "Answer1": "Este o funcţie membră care are acelaşi nume ca şi clasa în care este declarată",
+        "Answer2": "Este o funcţie membră care întoarce o valoare",
+        "Answer3": "Este o funcţie membră care nu are valoare de return",
+        "Answer4": "Este o funcţie membră utilizată pentru a iniţializa un obiect",
+        "Answer5": "Este o funcţie membră utilizată pentru a dealoca spaţiu de memorie",
+        "Answer6": "O clasă nu poate avea mai mult de un constructor",
+        "Answer": "a,c,d",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Care dintre următoarele afirmaţii sunt adevărate despre template-uri(C++)/generice(Java)?",
+        "Answer1": "Template-urile / genericele sunt o facilitate a limbajului care permit folosirea aceluiaşi cod pentru diferite tipuri de date",
+        "Answer2": "Template-urile / genericele sunt exemple de polimorfism.",
+        "Answer3": "Template-urile / genericele nu pot fi folosite cu tipuri de date abstracte definite de utilizator.",
+        "Answer4": "În afară de template-urile / genericele implicite nu pot fi definite altele noi.",
+        "Answer": "a,b",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Care dintre următoarele afirmaţii sunt adevărate în limbajele C++/Java?",
+        "Answer1": "O funcţie statică nu poate arunca o excepţie.",
+        "Answer2": "O funcţie statică nu poate accesa o variabilă membru non-statică a clasei.",
+        "Answer3": "O funcţie statică nu poate accesa o variabilă membru statică a clasei.",
+        "Answer4": "O variabilă membru statică a clasei nu poate fi modificată într-o funcţie membră non-statică.",
+        "Answer": "b",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Excepţiile sunt:",
+        "Answer1": "Erori care apar la compilarea programului",
+        "Answer2": "Situaţii speciale tratate în program prin teste de tipul if(variabila == NULL)",
+        "Answer3": "Erori care apar la rularea programului",
+        "Answer4": "'Aruncate' folosind instrucţiunea try şi 'tratate' folosind instrucţiunea catch",
+        "Answer5": "'Aruncate' folosind instrucţiunea throw(s) şi 'tratate' în blocuri try - catch (finally)",
+        "Answer": "c,e",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Care este asocierea corectă între următoarele verbe şi relaţiile între clase?",
+        "Answer1": "(1, a), (2, b), (3, c)",
+        "Answer2": "(1, b), (2, c), (3, a)",
+        "Answer3": "(1, c), (2, b), (3, a)",
+        "Answer4": "(1, b), (2, a), (3, c)",
+        "Answer": "b",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Principiul OCP (Open Close Principle) din cadrul principiilor SOLID se referă la:",
+        "Answer1": "Responsabilităţile pe care trebuie să le implementeze o clasă",
+        "Answer2": "Realizarea de ierarhii de clase consistente",
+        "Answer3": "Problemele care apar din cauza codului duplicat",
+        "Answer4": "Posibilitatea extinderii claselor şi evitarea modificărilor claselor şi codului existent",
+        "Answer": "d",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Care din următoarele afirmaţii sunt false în contextul supraîncărcării operatorilor în limbajul C++:",
+        "Answer1": "Se pot adăuga noi operatori limbajului",
+        "Answer2": "Se poate schimba n-aritatea (numărul de operanzi ai operatorului)",
+        "Answer3": "Nu toţi operatorii pot fi supraîncărcaţi",
+        "Answer4": "Operatorii se pot supraîncărca prin intermediul funcţiilor membre clasei şi funcţii prietene clasei.",
+        "Answer": "a,b",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "În limbajul C++, dacă o clasă X are ca membri variabile pointer, este recomandat să conţină:",
+        "Answer1": "Un destructor care nu face nimic X(){}",
+        "Answer2": "O funcţie friend care să permită copierea obiectului",
+        "Answer3": "Supraîncărcarea operatorului =",
+        "Answer4": "Constructorul de copiere",
+        "Answer5": "Supraîncărcarea operatorului ==",
+        "Answer6": "Un destructor în care se dealocă memoria adresată de membrii de tip pointer ai clasei",
+        "Answer": "c,d,f",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Se dă următoarea secventă de cod: De câte ori sunt apelați constructorii clasei Date?",
+        "Answer1": "2",
+        "Answer2": "3",
+        "Answer3": "4",
+        "Answer4": "5",
+        "Answer": "c",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "10. Care din următoarele afirmatii sunt adevărate?",
+        "Answer1": "clasa Curve nu poate fi instantiată deoarece metoda addControlPoint() nu este implementată",
+        "Answer2": "clasa Curve nu poate fi instantiată deoarece este clasă abstractă",
+        "Answer3": "codul se compilează cu succes",
+        "Answer": "b",
+        "Category": "Limbajul C++"
+    },
+    {
+        "QuestionTitle": "Dacă o metodă are ca parametru o referinţă la un obiect inmutabil, de exemplu clasa String, poate metoda să modifice starea obiectului?",
+        "Answer1": "Da, dacă avem o referinţă la un obiect imutabil îi putem modifica starea",
+        "Answer2": "Da, dar trebuie să folosim un operator special ''+'' ca să realizăm acest lucru",
+        "Answer3": "Nu, starea obiectelor imutabile nu poate fi modificată de nimeni după ce obiectul a fost creat",
+        "Answer4": "Nu, doar proprietarul obiectului imutabil poate să îi schimbe starea.",
+        "Answer": "c",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Care dintre afirmaţiile de mai jos este adevărată în relaţie cu limbajul Java?",
+        "Answer1": "Specificatorul final se aplică la clase, atribute si metode;",
+        "Answer2": "O metodă declarată final poate apela doar metode declarate final în aceeaşi clasă;",
+        "Answer3": "O metodă declarată final nu poate fi suprascrisă la subclasare;",
+        "Answer4": "Un atribut declarat final poate fi setat doar o singură dată;",
+        "Answer": "a,c,d",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Care dintre afirmaţiile de mai jos este/sunt adevărată/e despre conceptul de moştenire între clase?",
+        "Answer1": "Mecanismul prin care o clasă preia structura (datele membru) şi comportamentul (metodele) unei alte clase la care adaugă elemente specifice;",
+        "Answer2": "Prin mecanismul de moştenire avem acces la datele private ale clasei(claselor) de bază;",
+        "Answer3": "Nu toate limbajele de programare implementează conceptul de moştenire multiplă;",
+        "Answer4": "O metodă definită în clasa de bază nu poate fi suprascrisă în clasa derivată;",
+        "Answer5": "Moştenirea poate fi întotdeauna înlocuită cu compunerea obiectelor.",
+        "Answer": "a,c",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Care dintre afirmaţiile de mai jos este/sunt adevărată/e referitor la conceptul de clasă abstractă în limbajul Java:",
+        "Answer1": "O clasă care nu poate fi instanţiată;",
+        "Answer2": "Nu există nicio diferenţă între clasele abstracte şi interfeţe;",
+        "Answer3": "O clasă abstractă poate conţine variabile membre care nu sunt constante.",
+        "Answer": "a,c",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Care dintre afirmaţiile de mai jos este/sunt adevărată/e despre clase şi obiecte:",
+        "Answer1": "O clasă modelează caracteristici comune mai multor obiecte;",
+        "Answer2": "Un obiect este o realizare/instantă a unei clase;",
+        "Answer3": "O clasă este o realizare/instantă a unui obiect;",
+        "Answer4": "Nu există nicio legătură între clase şi obiecte.",
+        "Answer": "a,b",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Care din următoarele afirmaţii sunt false relativ la limbajul Java:",
+        "Answer1": "Orice clasă este derivată din clasa Object",
+        "Answer2": "O clasă poate extinde una sau mai multe clase de bază",
+        "Answer3": "O clasă poate implementa una sau mai multe interfeţe",
+        "Answer4": "Subclasele moştenesc atributele, metodele şi constructorii clasei de bază",
+        "Answer": "b,d",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Care din următoarele afirmat, ii este/sunt adevărare despre clasa PreparedStatement?",
+        "Answer1": "Interogarea este compilată de fiecare dată când este executată",
+        "Answer2": "Permite rularea aceleiași interogări, prin compilarea ei o singură dată  si parametrizarea cu valori diferite",
+        "Answer3": "Folosirea clasei PraparedStatement evită întotdeauna SQL Injection",
+        "Answer4": "SQL Injection poate fi evitat prin folosirea placeholderului '?'",
+        "Answer": "b,d",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Două funcţii care au același nume într-o clasă Java, pot fi diferenţiate datorită:",
+        "Answer1": "Numărului de variabile din lista de parametri",
+        "Answer2": "Nu pot fi diferenţiate",
+        "Answer3": "Tipului variabilelor din lista de variabile",
+        "Answer4": "Tipului de return al funcției",
+        "Answer": "a,c",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Se consideră următoarea secventă de cod: Care din variantele de mai jos instantiază şi lansează în executie un fir de execuţie?",
+        "Answer1": "new Thread()).start()",
+        "Answer2": "a.start( )",
+        "Answer3": "a.run( )",
+        "Answer4": "new Thread.run( )",
+        "Answer": "b",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Considerând următoarea secventă de cod, stabiliţi care este ordinea execut,iei (in ipoteza că o clasă are un constructor, o metodă, un bloc static si un bloc de instantă):",
+        "Answer1": "instance block; method; static block; constructor;",
+        "Answer2": "static block; instance block; constructor; method;",
+        "Answer3": "method; constructor; instance block; static block;",
+        "Answer4": "static block; method; instance block; constructor;",
+        "Answer5": "constructor; static block; instance block; method;",
+        "Answer": "b",
+        "Category": "Limbajul Java"
+    },
+    {
+        "QuestionTitle": "Se consideră următoarea secventă de cod: Care din variantele de mai jos se va afișa:",
+        "Answer1": "[mere,pere,banane,kiwi,ananas,portocale]",
+        "Answer2": "[ananas,banane,kiwi,mere,pere,portocale]",
+        "Answer3": "[Ljava.lang.String;@15db9742]",
+        "Answer4": "[portocale,ananas,kiwi,mere,banane,pere]",
+        "Answer": "b",
+        "Category": "Limbajul Java"
     }
 ]
