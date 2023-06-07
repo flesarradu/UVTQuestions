@@ -59,8 +59,16 @@
 
 	<ItemGroup>
 	  <None Remove="CustomControls\" />
+	  <None Remove="Services\" />
+	  <None Update="questions.json">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="CustomControls\" />
+	  <Folder Include="Services\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="questions.json" />
 	</ItemGroup>
 </Project>

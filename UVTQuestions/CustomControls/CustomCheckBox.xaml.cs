@@ -43,4 +43,9 @@ public partial class CustomCheckBox : ContentView
     {
         checkBox.IsChecked = !checkBox.IsChecked;
     }
+
+    void checkBox_CheckedChanged(System.Object sender, Microsoft.Maui.Controls.CheckedChangedEventArgs e)
+    {
+        OnPropertyChanged(nameof(sender));
+    }
 }

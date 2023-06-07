@@ -1,4 +1,7 @@
 ﻿using System.Runtime.CompilerServices;
+using CommunityToolkit.Mvvm.Messaging;
+using CommunityToolkit.Mvvm.Messaging.Messages;
+using UVTQuestions.Messages;
 
 namespace UVTQuestions.CustomControls;
 
@@ -93,21 +96,20 @@ public partial class QuestionView : ContentView
         {
             checkedAnswers.Add("d");
         }
+
         Answered = string.Join(',', checkedAnswers);
     }
 
     public QuestionView()
 	{
 		InitializeComponent();
-	}
 
-    protected override void OnPropertyChanged([CallerMemberName] string propertyName = null)
-    {
-        if(propertyName == "IsChecked")
+        WeakReferenceMessenger.Default.Register<GetCheckedAnswersMessage>(this, (r, m) =>
         {
             GetCheckedAnswers();
-        }
-        base.OnPropertyChanged(propertyName);
-    }
-
+        });
+	}
 }
+
+
+

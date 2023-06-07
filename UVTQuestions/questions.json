@@ -1,0 +1,702 @@
+[
+    {
+        "QuestionTitle": "Care dintre urmatoarele afirmatii este/sunt adevarata/adevarate pentru algoritmul corespunzator functiei de mai jos (se considera ca x este un tablou unidimensional cu n elemente)?",
+        "Answer1": "Algoritmul returneaza numarul de elemente pozitive din x",
+        "Answer2": "Algoritmul returneaza numarul de elemente din cea mai lunga subsecventa cu elemente pozitive din x",
+        "Answer3": "Algoritmul are ordinul de complexitate O(n^2)",
+        "Answer4": "Algoritmul are ordinul de complexitate O(n)",
+        "Answer5": "Algoritmul are ordinul de complexitate O(n*k)",
+        "Answer": "b,d",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Care dintre următoarele afirmaţii este/sunt adevărată/adevărate pentru algoritmul corespunzător funcţiei de mai jos (se consideră că a este un tablou unidimensional cu n elemente)?",
+        "Answer1": "Algoritmul sortează descrescător tabloul a",
+        "Answer2": "După aplicarea algoritmului, tabloul a satisface proprietatea a[i] ≥ a[n - 1] pentru 0 ≤ i < n",
+        "Answer3": "Algoritmul sortează crescător tabloul a",
+        "Answer4": "După aplicarea algoritmului, tabloul a satisface proprietatea a[i] ≤ a[n - 1] pentru 0 ≤ i < n",
+        "Answer": "b",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Se consideră două valori naturale a şi b şi algoritmul descris prin (// specifică operatia de determinare a câtului împărtirii întregi): Care dintre următoarele afirmaţii este/sunt adevărată/adevărate?",
+        "Answer1": "Este posibil ca succesiunea de apeluri recursive să nu se termine",
+        "Answer2": "Algoritmul returnează întotdeauna 0",
+        "Answer3": "Algoritmul returnează produsul a*b dacă a este par şi a*b+b dacă a este impar",
+        "Answer4": "Algoritmul returnează produsul a*b indiferent de paritatea lui a",
+        "Answer5": "Dacă a > 2b atunci numărul de operaţii de înmulţire efectuate este mai mic în cazul apelului alg(b,a) decât în cazul apelului alg(a,b)",
+        "Answer": "d, e",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Se consideră un tablou unidimensional, a[0..n-1], cu n = 1010 valori numerice şi se pune problema determinării primelor 10 valori în ordine crescătoare. Care dintre următoarele abordări asigură faptul că a[0..9] conține cele mai mici 10 elemente în ordine crescătoare şi este mai eficientă?",
+        "Answer1": "Se sortează a[0..n-1] crescător folosind algoritmul quicksort",
+        "Answer2": "Se sortează parțial a aplicând algoritmul de sortare prin inserție în care ciclul exterior for i in range(1,n) se înlocuiește cu for i in range(1,11)",
+        "Answer3": "Se sortează parțial a aplicând algoritmul de sortare prin selecție în care ciclul exterior for i in range(0,n-1) se înlocuiește cu for i in range(0,10)",
+        "Answer": "c",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Se consideră algoritmul alg apelat pentru un număr natural n şi se notează cu T(n) numărul de operaţii de adunare efectuate. Care dintre următoarele afirmaţii este(sunt) adevarată(e)?",
+        "Answer1": "Algoritmul returnează câte cifre impare are numărul n",
+        "Answer2": "Algoritmul returnează numărul de cifre egale cu 1 din reprezentarea binară a lui n",
+        "Answer3": "T(n)=1 dacă n<2 şi T(n)=T([n/2])+n MOD 2 dacă n≥2",
+        "Answer4": "T(n)=0 dacă n<2 şi T(n)=T([n/2])+1 dacă n≥2",
+        "Answer5": "T(n) aparține lui O(n)",
+        "Answer6": "T(n) aparține lui O(log n)",
+        "Answer": "b,d,f",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Algoritmul de sortare rapidă este cel mai potrivit pentru:",
+        "Answer1": "Sortarea unei liste mari cu elemente aleatoare",
+        "Answer2": "Sortarea unei liste aproape ordonate",
+        "Answer3": "Sortarea unei liste scurte",
+        "Answer4": "Nu este potrivit pentru niciun fel de sortare",
+        "Answer": "a",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Se consideră şirul lui Fibonacci dat de relaţia de recurenţă F0 = 0, F1 = 1 şi Fn+1 = Fn + Fn-1. De câte ori este evaluat F2 pentru a calcula F5 în cazul calculului termenului Fn în mod recursiv.",
+        "Answer1": "De 3 ori",
+        "Answer2": "O dată",
+        "Answer3": "De 4 ori",
+        "Answer4": "De 5 ori",
+        "Answer": "a",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Care din următoarele afirmaţii NU sunt adevărate în cazul algoritmului de căutare binară:",
+        "Answer1": "Trebuie folosit un tablou sortat",
+        "Answer2": "Trebuie să avem acces direct la elementul din mijloc",
+        "Answer3": "Algoritmul nu este eficient atunci când avem mai mult de 1000 de elemente",
+        "Answer4": "Algoritmul realizează sortarea elementelor unui tablou",
+        "Answer": "c,d",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Se consideră următorul algoritm aplicat unui număr n de forma n = ckck-1 . . . c1c0: Dacă p este o variabilă (implicită) care contorizează numărul de executări ale ciclului (contorul ciclului), care este proprietatea invariantă?",
+        "Answer1": "s=c0+c1+...+cp, n=ckck-1...cp",
+        "Answer2": "s=c0+c1+...+cp-1, n=ckck-1...cp",
+        "Answer3": "s=c0+c1+...+cp-1, n=ckck-1...c1c0",
+        "Answer4": "n = ckck-1 ...cp",
+        "Answer": "b",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Fie A = (a1 , ..., an ) un multiset. Pentru a găsi S = (s1 , ..., sk ), un subset al lui A folosind tehnica căutarii local optimale (căutare lacomă - greedy):",
+        "Answer1": "La fiecare pas elementul care pare a fi cel mai promițător la pasul respectiv este selectat din A și adăugat la S.",
+        "Answer2": "La fiecare pas elementul care pare a fi cel mai promițător la pasul respectiv este selectat din A și adăugat la S. Dacă ulterior nu este bun îl putem înlocui cu o altă componentă.",
+        "Answer3": "La fiecare pas elementul care pare a fi cel mai promițător pe ansamblul problemei este selectat din A și adăugat la S.",
+        "Answer4": "La fiecare pas un element oarecare este selectat din A și adăugat la S.",
+        "Answer": "a",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "O listă liniară simplu înlănţuită este:",
+        "Answer1": "Lista liniară, în care relaţia de ordonare este materializată pe suport printr-un pointer către elementul următor",
+        "Answer2": "O structură de date implementată prin tipul tablou",
+        "Answer3": "O structură de date circulară",
+        "Answer": "a",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Care din următoarele afirmaţii sunt corecte?",
+        "Answer1": "Complexitatea (cea mai defavorabilă) pentru operaţiile de inserare, ştergere sau căutare într-un arbore binar de căutare este O(log n)",
+        "Answer2": "Complexitatea (cea mai defavorabilă) pentru operaţiile de inserare, ştergere sau căutare într-un arbore AVL este O(log n)",
+        "Answer3": "Complexitatea (cea mai defavorabilă) pentru operaţiile de inserare, ştergere sau căutare într-un arbore splay tree este O(log n)",
+        "Answer": "b",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Ce structură de date poate fi folosită pentru a implementa o traversare iterativă a unui arbore binar de căutare?",
+        "Answer1": "Queue",
+        "Answer2": "Stack",
+        "Answer3": "Hash Table",
+        "Answer4": "Splay tree",
+        "Answer": "b",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Care este complexitatea de inserare a unui element într-o listă înlănţuită sortată?",
+        "Answer1": "O(1)",
+        "Answer2": "Θ(1)",
+        "Answer3": "O(n)",
+        "Answer4": "Θ(logn)",
+        "Answer": "c",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "O stivă este:",
+        "Answer1": "Listă liniară în care inserările se fac la un capăt al listei şi suprimările la celălalt capăt al listei",
+        "Answer2": "O listă liniară de tipul LIFO (Last In First Out)",
+        "Answer3": "O listă liniară cu restricţie la intrare",
+        "Answer4": "O listă liniară în care se manipulează mereu elementul cel mai recent introdus",
+        "Answer": "b,d",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "O structură de date de tip coadă este:",
+        "Answer1": "Structură de tip listă cu restricţie la intrare",
+        "Answer2": "O listă liniară de tipul FIFO (First In First Out)",
+        "Answer3": "O listă liniară în care toate operaţiile se efectuează doar la unul din capetele listei",
+        "Answer4": "O listă liniară în care inserările se efectuează la un capăt al listei, iar suprimările şi orice alt acces se efectuează la celălalt capăt al listei",
+        "Answer": "b,d",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "În care din următoarele structuri de date, căutarea are complexitate (worst-case) O(log n)?",
+        "Answer1": "Liste înlănţuite",
+        "Answer2": "Heap",
+        "Answer3": "Liste skip",
+        "Answer4": "Arbori splay",
+        "Answer": "c",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Care din variantele de parcurgere a unui arbore binar de căutare poate fi folosită pentru afişarea tuturor nodurilor ordonate după cheia nodului.",
+        "Answer1": "Parcurgere breadth-first",
+        "Answer2": "Preordine",
+        "Answer3": "Inordine",
+        "Answer4": "Postordine",
+        "Answer": "c",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Care este înălţimea minimă a unui arbore binar de căutare cu N noduri?",
+        "Answer1": "O(1)",
+        "Answer2": "O(N)",
+        "Answer3": "O(N · log2(N))",
+        "Answer4": "O(log2(N))",
+        "Answer": "d",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Care din afirmaţiile următoare sunt adevărate referitoare la operaţia de căutare într-un arbore binar de căutare cu N noduri:",
+        "Answer1": "Căutarea unui nod se face în O(log2(N)) dacă arborele este echilibrat.",
+        "Answer2": "Căutarea unui nod se face întotdeauna în O(1) dacă nodul căutat nu există.",
+        "Answer3": "Căutarea unui nod se face în (worst-case) O(N) dacă arborele nu este echilibrat.",
+        "Answer4": "Căutarea unui nod se face în O(N · log2(N)).",
+        "Answer": "a,c",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Fie următorul arbore binar de căutare, din care stergem (prin copiere) nodul 40. Care dintre următoarele afirmatii NU sunt adevărate:",
+        "Answer1": "La stergerea nodului 40, acesta va putea fi înlocuit de nodul 35",
+        "Answer2": "La stergerea nodului 40, acesta va putea fi înlocuit de nodul 37",
+        "Answer3": "La stergerea nodului 40, acesta va putea fi înlocuit de nodul 38",
+        "Answer4": "La stergerea nodului 40, acesta va putea fi înlocuit de nodul 44",
+        "Answer": "a,b",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Fie următorul arbore binar de cautare, din care stergem (prin copiere) nodul 20. Care dintre următoarele afirmatii sunt adevărate:",
+        "Answer1": "La stergerea nodului 20, acesta va putea fi inlocuit cu nodul 12",
+        "Answer2": "La stergerea nodului 20, acesta va putea fi inlocuit cu nodul 11",
+        "Answer3": "La stergerea nodului 20, acesta va putea fi inlocuit cu nodul 23",
+        "Answer4": "La stergerea nodului 20, acesta va putea fi inlocuit cu nodul 22",
+        "Answer": "a,d",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Fie urmatorul arbore binar. Parcurgerea in postordine corecta a acestui arbore este:",
+        "Answer1": "5,2,1,9,6,8,4,3",
+        "Answer2": "1,9,2,4,3,8,6,5",
+        "Answer3": "5,2,1,9,4,6,8,3",
+        "Answer4": "1,9,2,5,3,8,6,4",
+        "Answer": "b",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Fie urmatorul arbore binar. Parcurgerea in inordine a acestui arbore este:",
+        "Answer1": "1,9,2,4,3,18,16,10",
+        "Answer2": "10,2,1,9,16,18,4,3",
+        "Answer3": "1,2,9,10,16,4,18,3",
+        "Answer4": "1,2,3,4,9,10,16,18",
+        "Answer": "c",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2m - 1] cu două atribute suplimentare: capacitatea A.length = 2m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. Formula ce defineşte relaţia bunic(i,j) în un min-heap binar este:",
+        "Answer1": "(4·j+3≤i)∧(i≤4·j+6)",
+        "Answer2": "(4·i+3≤j)∧(j≤4·i+6)",
+        "Answer3": "j = ⌊i/4⌋",
+        "Answer4": "(4·j+1≤i)∧(i≤4·j+2)",
+        "Answer5": "(4·i+1≤j)∧(j≤4·i+2)",
+        "Answer": "a",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2m - 1] cu două atribute suplimentare: capacitatea A.length = 2m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. Numărul maxim de noduri în un min-heap binar cu adâncimea h este:",
+        "Answer1": "2^(h+1) - 1",
+        "Answer2": "2^h",
+        "Answer3": "h^2 - 1",
+        "Answer4": "2^(h-1) + 1",
+        "Answer": "a",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2m - 1] cu două atribute suplimentare: capacitatea A.length = 2m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. (1) Dacă A este un min-heap binar atunci A este sortat în ordinea crescătoare a cheilor din noduri? (2) Dacă A este sortat în ordinea crescătoare a cheilor din noduri atunci A este un min-heap binar?",
+        "Answer1": "(1) fals (2) adevărat",
+        "Answer2": "(1) fals (2) fals",
+        "Answer3": "(1) adevărat (2) adevărat",
+        "Answer4": "(1) adevărat (2) fals",
+        "Answer": "a",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2m - 1] cu două atribute suplimentare: capacitatea A.length = 2m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. Timpul de execuţie a operaţiei de ştergere a nodului cu cheie minimă din un min-heap binar cu n noduri este:",
+        "Answer1": "O(1)",
+        "Answer2": "O(logn)",
+        "Answer3": "Θ(nlogn)",
+        "Answer4": "Θ(n)",
+        "Answer": "b",
+        "Category": "Algoritmi si structuri de date"
+    },
+    {
+        "QuestionTitle": "Se dau mulţimile A = {a,b,c}, B = {A,B,C,D} şi C = {1,2,3,4,5}. Câte submulţimi ale mulţimii A U B U C conţin un element din A, două din B şi cel puţin 4 elemente din C?",
+        "Answer1": "15",
+        "Answer2": "14",
+        "Answer3": "100",
+        "Answer4": "108",
+        "Answer": "d",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Câte numere întregi cuprinse între 1 şi 1000 se divid cu 7, dar nu se divid cu 3?",
+        "Answer1": "93",
+        "Answer2": "95",
+        "Answer3": "92",
+        "Answer4": "136",
+        "Answer": "b",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "În câte feluri putem forma un buchet cu cinci trandafiri dacă putem folosi trandafiri roşii, galbeni şi albi? Ordinea punerii trandafirilor în buchet nu este relevantă.",
+        "Answer1": "21",
+        "Answer2": "120",
+        "Answer3": "125",
+        "Answer4": "243",
+        "Answer5": "15",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Un mesaj transmis pe un canal de comunicare este o secvenţă de 2 tipuri de semnale: semnale de tip A care durează 1 microsecundă, şi semnale de tip B care durează 2 microsecunde. De exemplu, mesajul ABAAB durează 3 x 1 + 2 x 2 = 7 microsecunde. Fie an numărul de mesaje diferite care durează n microsecunde. Care este valoarea lui a10?",
+        "Answer1": "89",
+        "Answer2": "55",
+        "Answer3": "2917",
+        "Answer4": "144",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "In internet, format din reţele interconectate de calculatoare, fiecărei conexiuni de reţea dintr-un calculator i se atribuie o adresă internet. Protocolul IPv4 prevede că o adresă internet este un şir de 32 biţi, format din un număr de reţea (netid) urmat de un număr de gazdă (hostid). Sunt 3 tipuri de adrese internet: Câte adrese IPv4 diferite sunt disponibile pentru conexiunile de reţea din internet?",
+        "Answer1": "2^29 ·2^30 ·2^31",
+        "Answer2": "2^31",
+        "Answer3": "7·2^29",
+        "Answer4": "2^32",
+        "Answer": "c",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Fie reţeaua de transport G cu sursa s şi destinaţia t: Care este valoarea fluxului maxim în G?",
+        "Answer1": "8",
+        "Answer2": "5",
+        "Answer3": "6",
+        "Answer4": "7",
+        "Answer": "d",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Fie graful ponderat: Ce greutate totală are arborele minim de acoperire al acestui graf?",
+        "Answer1": "229",
+        "Answer2": "216",
+        "Answer3": "230",
+        "Answer4": "234",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Care din grafurile următoare este eulerian?",
+        "Answer1": "G1,G4",
+        "Answer2": "G2,G3",
+        "Answer3": "niciunul",
+        "Answer4": "G4",
+        "Answer5": "G1,G3",
+        "Answer": "b",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Care din grafurile următoare are un cuplaj perfect?",
+        "Answer1": "G1",
+        "Answer2": "G2",
+        "Answer3": "G3",
+        "Answer4": "G4",
+        "Answer5": "216",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Câţi arbori diferiţi cu 5 noduri, numerotate de la 1 la 5, există?",
+        "Answer1": "10",
+        "Answer2": "273",
+        "Answer3": "32",
+        "Answer4": "120",
+        "Answer5": "125",
+        "Answer": "e",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Câte cuplaje maxime are graful bipartit complet Km,n dacă 1 ≤ m ≤ n? Observaţi că un astfel de cuplaj trebuie să aibe m muchii.",
+        "Answer1": "m",
+        "Answer2": "m+n",
+        "Answer3": "P(n,m)",
+        "Answer4": "C(n,m)",
+        "Answer5": "m^n",
+        "Answer6": "n^m",
+        "Answer": "c",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Câte muchii are graful complet Kn?",
+        "Answer1": "C(n,2)",
+        "Answer2": "n^2",
+        "Answer3": "2^n",
+        "Answer4": "n·(n-1)",
+        "Answer5": "n",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Se presupune că n ≥ 3. Câte regiuni are o reprezentare planară a grafului bipartit complet Kn,2?",
+        "Answer1": "n+1",
+        "Answer2": "n",
+        "Answer3": "2·n",
+        "Answer4": "C(n,2)",
+        "Answer5": "P(n,2)",
+        "Answer": "b",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Un şir ternar este un şir care conţine doar cifrele 0,1 şi 2. Fie an numărul şirurilor ternare de lungime n care nu conţin apariţii consecutive ale cifrei 0. De exemplu, a1 = 3 şi a2 = 8. Care din formulele următoare are loc pentru orice n ≥ 3:",
+        "Answer1": "an =2an-1 +2an-2",
+        "Answer2": "an =2an-1 +2an-2 +3^(n-1)",
+        "Answer3": "an =2an-1 +3an-2",
+        "Answer4": "an =2an-1 +3^(n-1)",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Care dintre grafurile următoare au numărul cromatic 2:",
+        "Answer1": "Orice arbore cu n ≥ 2 noduri.",
+        "Answer2": "Orice graf complet Kn cu număr par de noduri.",
+        "Answer3": "Orice graf complet Kn cu număr impar de noduri mai mare sau egal ca 3.",
+        "Answer4": "Orice graf ciclic Cn cu n ≥ 2 număr par.",
+        "Answer5": "Orice graf ciclic Cn cu n ≥ 2 număr impar.",
+        "Answer6": "Orice graf bipartit Km,n.",
+        "Answer": "a,d,f",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "A⊕B = C ∈ Mn dacă C[i][j] = max(A[i][j],B[i][j]) şi A⊙k B = D ∈ Mn dacă D[i][j] = A[i][k] · B[k][j]. Fie G un graf simplu neorientat cu n noduri numerotate de la 1 la n, şi AG ∈ Mn matricea lui de adiacenţă. Numărul de grafuri neorientate simple cu n noduri numerotate de la 1 la n este:",
+        "Answer1": "2^(n*(n-1)/2",
+        "Answer2": "2^n",
+        "Answer3": "n(n-1)/2",
+        "Answer4": "n-1",
+        "Answer5": "n·(n-1)",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Fie Mn mulţimea matricilor de dimensiune n x n cu elemente 0 sau 1. Pentru orice două matrici A, B ∈ Mn şi 1 ≤ k ≤ n definim operaţiile A ⊕ B şi A ⊙k B în felul următor: A ⊕ B = C ∈ Mn dacă C[i][j] = max(A[i][j], B[i][j]) şi A ⊙k B = D ∈ Mn dacă D[i][j] = A[i][k] · B[k][j] pentru toţi 1 ≤ i, j ≤ n.Fie G un graf simplu neorientat cu n noduri numerotate de la 1 la n, şi AG ∈ Mn matricea lui de adiacenţă. Fie In matricea identitate de dimensiune n x n, şi 1 ≤ p ≤ n. Se consideră algoritmul următor de calcul al matricii B ∈ Mn",
+        "Answer1": "Θ(p·n^2)",
+        "Answer2": "Θ(p·n)",
+        "Answer3": "Θ(p·n^3)",
+        "Answer4": "Θ(n),Θ(p·2^n)",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Fie Mn mulţimea matricilor de dimensiune n x n cu elemente 0 sau 1. Pentru orice două matrici A, B ∈ Mn şi 1 ≤ k ≤ n definim operaţiile A ⊕ B şi A ⊙k B în felul următor: A ⊕ B = C ∈ Mn dacă C[i][j] = max(A[i][j], B[i][j]) şi A ⊙k B = D ∈ Mn dacă D[i][j] = A[i][k] · B[k][j] pentru toţi 1 ≤ i, j ≤ n. Fie G un graf simplu neorientat cu n noduri numerotate de la 1 la n, şi AG ∈ Mn matricea lui de adiacenţă. Fie In matricea identitate de dimensiune n x n, şi 1 ≤ p ≤ n. Se consideră algoritmul următor de calcul al matricii B ∈ Mn",
+        "Answer1": "Există o cale de lungime cel mult p + 1 de la nodul i la nodul j.",
+        "Answer2": "Există o cale de lungime p de la nodul i la nodul j",
+        "Answer3": "Există o cale de la nodul i la nodul j care trece prin nodul p.",
+        "Answer4": "Există o cale de la nodul i la nodul j care trece prin toate nodurile din mulţimea {1, 2, . . . , p}.",
+        "Answer": "a",
+        "Category": "Teoria grafurilor si combinatorica"
+    },
+    {
+        "QuestionTitle": "Consideraţi, în logica predicatelor, limbajul care conţine următoarele simboluri: Care din următoarele sunt termeni peste acest limbaj?",
+        "Answer1": "(0*x)-1",
+        "Answer2": "1+(z*x)<0",
+        "Answer3": "x+((-1)*0)",
+        "Answer4": "0*(y+1)",
+        "Answer": "c,d",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Pentru următoarele formule propoziţionale, şi pentru interpretarea {P, ¬Q}:",
+        "Answer1": "((P ⇒ Q) ∧ ((¬Q) ∧ P )) are valoarea sub interpretare A",
+        "Answer2": "((P ⇒ Q) ⇒ (Q ⇒ P )) are valoarea sub interpretare A",
+        "Answer3": "((¬(P v Q)) ∧ (¬Q)) are valoarea sub interpretare F .",
+        "Answer": "b,c",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Care din următoarele afirmaţii este adevărată:",
+        "Answer1": "dacă o formulă propoziţională este validă, atunci este satisfiabilă",
+        "Answer2": "dacă o formulă propoziţională nu este validă, atunci este nesatisfiabilă",
+        "Answer3": "dacă o formulă propoziţională nu este validă, atunci negaţia sa este satisfiabilă",
+        "Answer4": "dacă o formulă propoziţională nu este validă, atunci negaţia sa este validă",
+        "Answer": "a,c",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Care este relaţia dintre propoziţiile (F ∧ G) ⇒ H şi F ⇒ (G ⇒ H)?",
+        "Answer1": "sunt logic echivalente",
+        "Answer2": "prima este o consecinţă logică a celei de-a doua",
+        "Answer3": "a doua este o consecinţă logică a primeia",
+        "Answer4": "nu se relaţionează în niciun fel descris mai sus",
+        "Answer": "a,b,c",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Formula P⇔Q este: ... aceste formule fiind: Q ⇒ R, R ⇒ (P ∧ Q), P ⇒(QvR).",
+        "Answer1": "logic echivalentă cu conjuncţia formulelor de mai jos",
+        "Answer2": "o consecinţă logică a formulelor de mai jos",
+        "Answer3": "logic echivalentă cu disjuncţia formulelor de mai jos",
+        "Answer": "b",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Care din formulele de mai jos sunt în formă normală disjunctivă?",
+        "Answer1": "P",
+        "Answer2": "¬P v Q",
+        "Answer3": "P ∧ ¬Q ∧ S",
+        "Answer4": "(P ∧¬Q∧S)v¬S",
+        "Answer": "a,b,c,d",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Care din următoarele este un rezolvent al clauzelor {P, ¬Q, R} şi {¬P, Q, S}?",
+        "Answer1": "∅",
+        "Answer2": "{P,¬P,R,S}",
+        "Answer3": "{R,S}",
+        "Answer": "b",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Pentru a verifica faptul că o formulă G este o consecinţă logică a formulelor F1, . . . , Fn, se poate:",
+        "Answer1": "verifica dacă (F1 ∧ . . . ∧ Fn) ⇒ G este nesatisfiabilă",
+        "Answer2": "verifica dacă ¬F1 v . . . v ¬Fn v G este nesatisfiabilă",
+        "Answer3": "verifica dacă ¬F1 v ... v¬Fn v G este validă",
+        "Answer4": "verifica dacă F1 ∧ . . . ∧ Fn ∧ ¬G este nesatisfiabilă",
+        "Answer": "c,d",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Există o formulă logic echivalenta cu ..img.. care conţine doar conectori propoziţionali din mulţimea: ... unde | este conectorul NŞI (i.e. P |Q = ¬(P ∧ Q)).",
+        "Answer1": "{¬,v}",
+        "Answer2": "{v,∧}",
+        "Answer3": "{|}",
+        "Answer4": "{⊥,→}",
+        "Answer": "a,d,f",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Mulţimea de clauze ce corespunde formulei (¬P ⇒(Q∧R))⇒(P ⇒¬Q) este:",
+        "Answer1": "{{¬P,¬Q}}",
+        "Answer2": "{{P,¬Q},{P,R},{¬Q,R}}",
+        "Answer3": "{{P,¬Q,¬R},{P,Q,R},{¬P,¬Q,R}}",
+        "Answer": "a",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Consideraţi mulţimea de clauze: (1) {P, Q, ¬R}, (2) {¬P, R}, (3) {P, ¬Q, S}, (4) {¬P, ¬Q, ¬R}, (5) {P,¬S}. Formula corespunzătoare acestei mulţimi este:",
+        "Answer1": "validă",
+        "Answer2": "satisfiabilă",
+        "Answer3": "nesatisfiabilă",
+        "Answer": "b",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Metoda Davis-Putnam returnează răspunsul satisfiabil:",
+        "Answer1": "când se generează clauza vidă",
+        "Answer2": "când se generează mulţimea vidă de clauze",
+        "Answer3": "când nu se pot genera clauze noi, şi clauza vidă nu este în mulţimea de clauze",
+        "Answer": "b,c",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Pentru a demonstra o formulă G când se cunoaşte o disjuncţie A v B:",
+        "Answer1": "se presupune A şi se demonstrează G, apoi se presupune B şi se demonstrază G",
+        "Answer2": "se presupune A şi se demonstrează G",
+        "Answer3": "se presupune ¬A şi se demonstrează B şi G",
+        "Answer": "a",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Fie P,Q,R variabile propoziţionale. Care din formulele propoziţionale de mai jos corespund funcţiei booleene cu trei argumente care returnează A dacă argumentele sale reprezintă codificarea binară a unui număr prim este:",
+        "Answer1": "P ∧ Q ∧ ¬R",
+        "Answer2": "(¬P ∧Q)v(P ∧R)",
+        "Answer3": "(¬P ∧Q∧¬R)v(((¬P ∧Q)vP)∧R)",
+        "Answer4": "((¬P ∧Q)v(P ∧¬Q)v(P ∧Q))",
+        "Answer": "b,c",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Fie mulţimea de clauze: {{¬P, ¬Q, R}, {P, ¬Q, ¬R}, {¬P, R}, {P, ¬Q, R}, {¬Q, ¬R}} . Primul pas în aplicarea metodei Davis Putnam asupra mulţimii de clauze consistă în: ",
+        "Answer1": "aplicarea regulii de împărţire (folosind literalul ¬P );",
+        "Answer2": "aplicarea regulii literalului pur (unde literalul pur este ¬Q);",
+        "Answer3": "aplicarea unui pas de rezoluţie;",
+        "Answer4": "aplicarea regulii clauzei cu un singur literal (folosind ultima clauză).",
+        "Answer": "b",
+        "Category": "Logica Computationala"
+    },
+    {
+        "QuestionTitle": "Limbajul generat de gramatica G = (VN,VT,S,P), unde VN = {S}; VT = {a,b}; P = {S → aSb|aAb, A → aA|λ}, este:",
+        "Answer1": "L={a^mb^n|m≥n≥1,}",
+        "Answer2": "L = {a^na^mb^n|n ≥ 0,m ≥ 0}",
+        "Answer3": "L = {a^(i+1)b^i|i ≥ 1}",
+        "Answer4": "L = {a^(n+i)bn|n ≥ 1,i ≥ 0}",
+        "Answer": "a,d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Regulile gramaticii G = (VN,VT,S,P), unde VN = {S}, VT = {PCR,PDAR,UDMR}, P = {S → PCR|PDAR|UDMR}, respectă restricţiile impuse gramaticilor:",
+        "Answer1": "regulate (tip 3)",
+        "Answer2": "independente de context (tip 2)",
+        "Answer3": "dependente de context (tip 1)",
+        "Answer4": "de tipul 0, 1, 2, 3",
+        "Answer": "a,b,c,d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Regulile gramaticii G = (VN,VT,S,P), unde P = {S → abc|aAbc, Ab → bA, Ac → Bbcc, bB → Bb, aB → aaA|aa}, respectă restricţiile impuse gramaticilor:",
+        "Answer1": "regulate (tip 3)",
+        "Answer2": "independente de context (tip 2)",
+        "Answer3": "dependente de context (tip 1)",
+        "Answer4": "de tipul 0",
+        "Answer": "d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Expresia regulată ce notează limbajul L = {w| şiruri de 0 şi 1 ce conţin cel putin un simbol 1 }, este:",
+        "Answer1": "(0|1)*1",
+        "Answer2": "1|(0|1)*1(1|0)*",
+        "Answer3": "0*11*",
+        "Answer4": "(0|1)*1(0|1)*",
+        "Answer": "b,d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Limbajul L notat de expresia regulata 01*|1; este:",
+        "Answer1": "L = {0,1,00,01,10,11,000,...}",
+        "Answer2": "L={w∈{0,1}*|w începe cu 1}",
+        "Answer3": "L={w∈{0,1}*|w începe cu 0}",
+        "Answer4": "L = {01^n|n ≥ 0} S{1}",
+        "Answer": "d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Limbajul L notat de expresia regulata (1|0)*0(0|1) este:",
+        "Answer1": "L = {0,1,00,01,10,11,...}",
+        "Answer2": "L={w∈{0,1}*|w se termină cu 00 sau 01}",
+        "Answer3": "L = {w ∈ {0,1}*|w are cel putin un simbol 0 }",
+        "Answer4": "L = {w ∈ {0, 1}*|w are 0 în penultima poziţie }",
+        "Answer": "b,d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Dacă L1 este un limbaj regulat iar despre L2 nu se cunoaşte tipul dar L1 / L2 este regulat, atunci L2 poate să fie",
+        "Answer1": "mulţimea vidă",
+        "Answer2": "independente de context",
+        "Answer3": "decidabil",
+        "Answer4": "regulat",
+        "Answer": "a,b,d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Aplicând Lema de pompare pentru un limbaj regulat, considerăm un cuvânt w suficient de lung care aparţine limbajului L şi îl descompunem în . . . . . . părţi.",
+        "Answer1": "2",
+        "Answer2": "5",
+        "Answer3": "3",
+        "Answer4": "6",
+        "Answer": "c",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "O producţie de forma A → B, unde A şi B nu sunt terminale, se numeşte",
+        "Answer1": "Regulă de ştergere",
+        "Answer2": "Redenumire",
+        "Answer3": "Formă normală Greibach",
+        "Answer4": "Formă normală Chomsky",
+        "Answer": "b",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Orice gramatică în formă normală Chomsky este",
+        "Answer1": "regulată",
+        "Answer2": "dependentă de context",
+        "Answer3": "independentă de context",
+        "Answer4": "toate cele menţionate anterior",
+        "Answer": "c",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Care dintre producţiile de mai jos poate fi acceptată de gramatica în formă normală Chomsky, unde A, B, C şi S sunt neterminale iar a este terminal?",
+        "Answer1": "A→BC",
+        "Answer2": "A → a",
+        "Answer3": "S → λ",
+        "Answer4": "toate cele menţionate anterior",
+        "Answer": "d",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Care dintre următoarele seturi de reguli corespund unei gramatici în formă normală Chomsky?",
+        "Answer1": "A→AB|BC|CD,A→0,B→1,C→2,D→3",
+        "Answer2": "A → AB, S → BCA|0|1|2|3",
+        "Answer3": "S→ABa,A→aab,B→Ac",
+        "Answer4": "toate cele menţionate anterior",
+        "Answer": "a",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Fie L limbajul generat de gramatica G = (VN,VT,S,P) unde VN = {S,A,B,C,X,Y,Z}, VT = {a, b, c}, şi P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ, Z → λ | AX | BY, A → a, B → b, C → c}. Alegeţi răspunsurile corecte.",
+        "Answer1": "L este limbaj regulat",
+        "Answer2": "L nu este limbaj regulat",
+        "Answer3": "L este limbaj de programare",
+        "Answer4": "",
+        "Answer": "a",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Fie L limbajul generat de gramatica G = (VN,VT,S,P) unde VN = {S,A,B,C,X,Y,Z}, VT = {a, b, c}, şi P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ, Z → λ | AX | BY, A → a, B → b, C → c}. Care din afirmaţiile următoare este adevărată?",
+        "Answer1": "L = {w ∈ VT* | w nu conţine litere consecutive identice}",
+        "Answer2": "L = {w ∈ VT*| w conţine litere consecutive identice}",
+        "Answer3": "L = {w ∈ VT* | w conţine subşirul abc}",
+        "Answer4": "L = {λ}.",
+        "Answer": "a",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Fie L limbajul generat de gramatica G = (VN,VT,S,P) unde VN = {S,A,B,C,X,Y,Z}, VT = {a, b, c}, şi P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ, Z → λ | AX | BY, A → a, B → b, C → c}. Fie sn numărul şirurilor din L cu lungimea n. Pentru orice n > 1 are loc relaţia de recurenţă:",
+        "Answer1": "sn = 2·sn-1",
+        "Answer2": "sn = 3·sn-1",
+        "Answer3": "sn = sn-1 +2·sn-2",
+        "Answer4": "sn = 3 sn-1 + sn-2",
+        "Answer": "a",
+        "Category": "Limbaje formale şi teoria automatelor"
+    },
+    {
+        "QuestionTitle": "Fie L limbajul generat de gramatica G = (VN,VT,S,P) unde VN = {S,A,B,C,X,Y,Z}, VT = {a, b, c}, şi P = { S → λ | AX | BY | CZ, X → λ | BY | CZ, Y → λ | AX | CZ, Z → λ | AX | BY, A → a, B → b, C → c}. Câte şiruri cu lungimea 4 conţine L?",
+        "Answer1": "16",
+        "Answer2": "24",
+        "Answer3": "32",
+        "Answer4": "81",
+        "Answer5": "243",
+        "Answer": "b",
+        "Category": "Limbaje formale şi teoria automatelor"
+    }
+]

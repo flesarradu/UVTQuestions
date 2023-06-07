@@ -23,6 +23,7 @@
                   Grid.Column="0"
                   x:Name="checkBox"
                   IsChecked="{Binding IsChecked, Source={x:Reference this}}"
+                  CheckedChanged="checkBox_CheckedChanged"
                   HorizontalOptions="Start"/>
     </Grid>
 </ContentView>

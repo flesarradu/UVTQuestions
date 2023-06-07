@@ -2,6 +2,9 @@
 using System.Text.Json;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using CommunityToolkit.Mvvm.Messaging;
+using UVTQuestions.Messages;
+using UVTQuestions.Services;
 
 namespace UVTQuestions
 {
@@ -16,77 +19,35 @@ namespace UVTQuestions
         [ObservableProperty]
         private string _answered;
 
-		public MainViewModel()
+        private IQuestionService _questionService;
+
+		public MainViewModel(IQuestionService questionService)
 		{
-
-			_questions.Add(new Question {
-				QuestionTitle = "Care dintre următoarele afirmaţii este/sunt adevărată/adevărate pentru algoritmul corespunzător funcţiei de mai jos (se consideră că x este un tablou unidimensional cu n elemente)?",
-				Answer1 = "Algoritmul returnează numărul de elemente pozitive din x",
-				Answer2 = "Algoritmul returnează numărul de elemente din cea mai lungă subsecvenţă cu elemente pozitive din x",
-				Answer3 = "Algoritmul are ordinul de complexitate O(n^2)",
-				Answer4 = "Algoritmul are ordinul de complexitate O(n)",
-				Answer = "b,d",
-				Category = "Algoritmi si structuri de date"
-            });
-            _questions.Add(new Question
-            {
-                QuestionTitle = "Care dintre următoarele afirmaţii este/sunt adevărată/adevărate pentru algoritmul corespunzător funcţiei de mai jos (se consideră că x este un tablou unidimensional cu n elemente)?",
-                Answer1 = "Algoritmul returnează numărul de elemente pozitive din x",
-                Answer2 = "Algoritmul returnează numărul de elemente din cea mai lungă subsecvenţă cu elemente pozitive din x",
-                Answer3 = "Algoritmul are ordinul de complexitate O(n^2)",
-                Answer4 = "Algoritmul are ordinul de complexitate O(n)",
-                Answer = "b,d",
-                Category = "Algoritmi si structuri de date"
-            });
-            _questions.Add(new Question
-            {
-                QuestionTitle = "Care dintre următoarele afirmaţii este/sunt adevărată/adevărate pentru algoritmul corespunzător funcţiei de mai jos (se consideră că x este un tablou unidimensional cu n elemente)?",
-                Answer1 = "Algoritmul returnează numărul de elemente pozitive din x",
-                Answer2 = "Algoritmul returnează numărul de elemente din cea mai lungă subsecvenţă cu elemente pozitive din x",
-                Answer3 = "Algoritmul are ordinul de complexitate O(n^2)",
-                Answer4 = "Algoritmul are ordinul de complexitate O(n)",
-                Answer = "b,d",
-                Category = "Algoritmi si structuri de date"
-            });
-            Questions.Add(new Question
-            {
-                QuestionTitle = "Care dintre următoarele afirmaţii este/sunt adevărată/adevărate pentru algoritmul corespunzător funcţiei de mai jos (se consideră că x este un tablou unidimensional cu n elemente)?",
-                Answer1 = "Algoritmul returnează numărul de elemente pozitive din x",
-                Answer2 = "Algoritmul returnează numărul de elemente din cea mai lungă subsecvenţă cu elemente pozitive din x",
-                Answer3 = "Algoritmul are ordinul de complexitate O(n^2)",
-                Answer4 = "Algoritmul are ordinul de complexitate O(n)",
-                Answer = "b,d",
-                Category = "Algoritmi si structuri de date"
-            });
-
+            _questionService = questionService;
+            Questions = questionService.Questions;
             LoadQuestion();
-            string json = JsonSerializer.Serialize<List<Question>>(_questions);
         }
-
-		private void LoadQuestionsFromJson(string json)
-		{
-			List<Question> questions = JsonSerializer.Deserialize<List<Question>>(json);
-		}
 
         private void LoadQuestion()
         {
-            CurrentQuestion = _questions.FirstOrDefault();
+            CurrentQuestion = _questionService.GetQuestion();
         }
         private void NextQuestion()
         {
-
+            CurrentQuestion = _questionService.GetQuestion();
         }
 
         [RelayCommand]
         public async Task AnswerQuestionAsync()
         {
+            WeakReferenceMessenger.Default.Send<GetCheckedAnswersMessage>(new GetCheckedAnswersMessage(""));
             if(Answered == _currentQuestion.Answer)
             {
                 NextQuestion();
             }
             else
             {
-                CurrentQuestion.QuestionTitle = "WRONG";
+                Vibration.Vibrate(100);
             }
         }
 	}

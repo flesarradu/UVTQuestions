@@ -14,6 +14,7 @@ public static partial class MauiProgram
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 })
+                .RegisterServices()
                 .RegisterViewModels()
                 .RegisterViews()
                 .UseMauiCommunityToolkit();
