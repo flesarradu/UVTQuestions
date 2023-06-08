@@ -1097,5 +1097,167 @@
         "Answer4": "[portocale,ananas,kiwi,mere,banane,pere]",
         "Answer": "b",
         "Category": "Limbajul Java"
-    }
+    },
+    {
+"QuestionTitle": "Verificarea software-lui poate implica",
+"Answer1": "analiza statică automată",
+"Answer2": "evaluarea utilității și utilizabilității software-lui în situații operaționale.",
+"Answer3": "depanarea erorilor",
+"Answer4": "inspectări ale software-lui",
+"Answer5": "testarea în vederea descoperirii existenței erorilor",
+"Answer6": "testarea faptului că software-ul îndeplines,te cerint,ele utilizator",
+"Answer": "a,d,e",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Diagrama de stări și tranziții reprezintă",
+"Answer1": "funcțiile sistemului",
+"Answer2": "răspunsul sistemului la evenimente interne",
+"Answer3": "răspunsul sistemului la evenimente externe",
+"Answer4": "interacțiuni între obiecte din sistem",
+"Answer5": "structura datelor",
+"Answer6": "interact,iunile actorilor cu sistemul",
+"Answer7": "fluxul de prelucrare a datelor în sistem",
+"Answer": "b,c",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Metodele agile de dezvoltare de software implică",
+"Answer1": "Furnizare incrementală",
+"Answer2": "Implicarea clientului pe parcursul procesului de dezvoltare",
+"Answer3": "Instituirea de procese normative pentru lucrul în echipă",
+"Answer4": "Acțiuni periodice de eliminare a complexității din sistem",
+"Answer5": "Modelarea completă a software-lui înainte de scrierea codului",
+"Answer": "a,b,d",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Bifați situațiile în care se reutilizează doar concepte:",
+"Answer1": "Servicii software",
+"Answer2": "Șabloane de proiectare (design patterns)",
+"Answer3": "Biblioteci de programe",
+"Answer4": "Șabloane arhitecturale",
+"Answer": "b,d",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+        "QuestionTitle": "Fie următoarea diagramă de clase.Fie următoarea diagramă de clase.",
+        "Answer1": "Un obiect de tip ComputerScience conține o colecție de obiecte de tip Student",
+        "Answer2": "Clasa Questionnaire are un atribut public de tip String",
+        "Answer3": "Clasa ComputerScience are operația publică addStudent(s:String)",
+        "Answer4": "Clasa ComputerScience are operația privată setSchedule(s:String)",
+        "Answer5": "Clasa Tutor este superclasă pentru clasa Masterand",
+		"Answer6": "Clasa ComputerScience definește o compoziție de obiecte de tip Questionnaire.",
+		"Answer7": "Între clasa ComputerScience și clasa Tutor există o asociere unidirecțională.",
+		"Answer8": "Clasa ComputerScience moștenește interfața Specialization.",
+		"Answer9": "Clasa Tutor definește un agregat de obiecte de tip Masterand.",
+        "Answer": "a,c,e,f",
+        "Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Fie următoarea diagramă de clase. Care secvență de cod Java descrie corect și complet relațiile clasei Proiect?",
+"Answer1": "class Proiect extends Student {\nprivate Collection <DiagramaUML> diagramele = new ArrayList<>();\nprivate CodSursa codul;\n...},",
+"Answer2": "class Proiect {\nprivate Collection <Student> studenti;\nprivate Collection <DiagramaUML> diagramele = new ArrayList<>();\nprivate CodSursa codul;\n...},",
+"Answer3": "class Proiect {\nprivate Student student;\nprivate DiagramaUML diagrama;\nprivate CodSursa codul;\n...},",
+"Answer4": "class Proiect {\nprivate Collection <Student> studenti = new ArrayList<>();\nprivate Collection <DiagramaUML> diagramele;\nprivate CodSursa codul;\n...},",
+"Answer": "b",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Fie următoarea diagramă de clase. Care secvență de cod Java descrie corect și complet relațiile clasei Revista?",
+"Answer1": "class Revista extends RevistaOnLine implements Produs {\nprivate Collection <Articol> articole;\n...},",
+"Answer2": "class Revista implements Produs {\nprivate Collection <Articol> articole = new LinkedList<>();\nprivate RevistaOnLine revista;\n...},",
+"Answer3": "class Revista implements Produs {\nprivate Collection <Articol> articole = new LinkedList<>();\n...},",
+"Answer4": "class Revista extends RevistaOnLine {\nprivate Collection <Articol> articole = new LinkedList<>();\nprivate Produs produs;\n...},",
+"Answer": "c",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Fie următoarea diagramă de clase. Selectați descrierea corectă și completă a relațiilor reprezentate în diagramă:",
+"Answer1": "Asociere bidirecțională între clasele Proiect și CodSursa; compoziție între clasele Proiect (componentă) și DiagramaUML (componenta); agregare între clasele Proiect (agregat) și Student (componenta); generalizare între interfața IStudent (implementată) și clasa Student (implementează); realizare între clasa Student (superclasă) și clasa Bursier (subclasă)",
+"Answer2": "Asociere bidirecțională între clasele Proiect și CodSursa; compoziție între clasele Proiect (componentă) și DiagramaUML (componenta); agregare între clasele Proiect (agregat) și Student (componenta); realizare între interfața IStudent (implementată) și clasa Student (implementează); generalizare între clasa Student (superclasă) și clasa Bursier (subclasă)",
+"Answer3": "Asociere bidirecțională între clasele Proiect și CodSursa; agregare între clasele Proiect (agregat) și DiagramaUML (componenta); compoziție între clasele Proiect (agregat) și Student (componenta); realizare între interfața IStudent (implementată) și clasa Student (implementează); generalizare între clasa Student (superclasă) și clasa Bursier (subclasă)",
+"Answer4": "Asociere bidirecțională între clasele Proiect și CodSursa; compoziție între clasele DiagramaUML (componenta) și Proiect (componenta); agregare între clasele Student (agregat) și Proiect (componenta); realizare între interfața IStudent (implementată) și clasa Student (implementează); generalizare între clasa Student (superclasă) și clasa Bursier (subclasă)",
+"Answer": "b",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Fie următoarea diagramă de clase. Care secvență de cod Java descrie corect și complet relația clasei Proiect cu clasa Student?",
+"Answer1": "class Student extends Proiect{...},\nclass Proiect{...},",
+"Answer2": "class Proiect extends Student{...},\nclass Student{...},",
+"Answer3": "class Proiect {\n private Collection <Student> studenti ...\n},\nclass Student{...},",
+"Answer4": "class Proiect {\n private Collection <Student> studenti ...\n},\nclass Student {\n private Proiect proiect;\n ...},",
+"Answer5": "class Proiect {\n private Collection <Student> studenti ...\n},\nclass Student {\n private Collection<Proiect> proiecte;\n ...},",
+"Answer": "c",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Fie următoarea diagramă de secvențe. Ce operații ale clasei ControlerInscriere rezultă din aceasta?",
+"Answer1": "getCursuri()",
+"Answer2": "display(listaCursuriOferite)",
+"Answer3": "inscriere(student, listaCursuriSelectate)",
+"Answer4": "Plan(listaCursuriSelectate)",
+"Answer5": "addPlan(planCurent)",
+"Answer6": "displayMsg('OK')",
+"Answer": "a,c",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Fie următoarea diagramă de secvențe. Selectați clasele din care sunt instanțiate obiectele implicate în interacțiune:",
+"Answer1": "InscriereForm",
+"Answer2": "ControlerInscriere",
+"Answer3": "listaCursuriSelectate",
+"Answer4": "curent",
+"Answer5": "Student",
+"Answer6": "Plan",
+"Answer7": "planCurent",
+"Answer": "a,b,e,f",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Fie următoarea diagramă de robustețe. Care afirmatii sunt adevărate?",
+"Answer1": "Home page este obiect boundary.",
+"Answer2": "ExtrageListaCarti poate fi obiect persistent.",
+"Answer3": "AfiseazaLinkuri este obiect de interacțiune cu actor.",
+"Answer4": "ExtrageListaCarti ar putea fi implementat ca metodă a unei clase entity.",
+"Answer5": "ListaCarti este obiect de interacțiune cu actor.",
+"Answer6": "Catalog este obiect entity.",
+"Answer": "a,d,f",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Selectați perechea de termeni cu care se înlocuiesc spațiile libere din următoarea frază:",
+"Answer1": "criterii / activități",
+"Answer2": "componente / roluri",
+"Answer3": "alphas / activity spaces",
+"Answer4": "criterii / alpha states",
+"Answer5": "alpha states / criterii",
+"Answer": "d",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Realizați corespondența corectă între concept și definiția sa:",
+"Answer1": "a – 5, b – 1, c – 4, d – 3, e – 2.",
+"Answer2": "a – 5, b – 3, c – 4, d – 1, e – 2",
+"Answer3": "a – 2, b – 1, c – 3, d – 4, e – 5",
+"Answer4": "a – 1, b – 2, c – 3, d – 4, e – 5",
+"Answer5": "a – 3, b – 2, c – 4, d – 5, e – 1",
+"Answer": "a",
+"Category": "Proiectarea aplicațiilor software"
+},
+{
+"QuestionTitle": "Selectați metodele de evitare a introducerii de erori în dezvoltarea de programe:",
+"Answer1": "Fiecare clasă trebuie să aibă o singură responsabilitate",
+"Answer2": "Folosire expresii regulate pentru validarea datelor de intrare",
+"Answer3": "Evitarea încuibării multiple de instrucțiuni condiționale",
+"Answer4": "Jurnalizarea interacțiunii utilizatorilor cu programul",
+"Answer5": "Înlocuirea corpului unei metode cu un nou algoritm mai clar care returnează același rezultat",
+"Answer6": "Minimizarea adâncimii ierarhiilor de clase",
+"Answer7": "Salvare automată a datelor utilizatorului la intervale presetate",
+"Answer8": "Identificarea aspectelor care variază ale unei aplicații și separarea lor de cele care nu variază",
+"Answer9": "Verificare valori date de intrare față de domeniul definit cu reguli de intrare",
+"Answer10": "Folosire aserțiuni pentru verificare rezultat de la un serviciu extern",
+"Answer": "a,c,e,f,h",
+"Category": "Proiectarea aplicațiilor software"
+},
 ]
