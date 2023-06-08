@@ -1,5 +1,5 @@
 [
-    {
+{
         "QuestionTitle": "Care dintre urmatoarele afirmatii este/sunt adevarata/adevarate pentru algoritmul corespunzator functiei de mai jos (se considera ca x este un tablou unidimensional cu n elemente)?",
         "Answer1": "Algoritmul returneaza numarul de elemente pozitive din x",
         "Answer2": "Algoritmul returneaza numarul de elemente din cea mai lunga subsecventa cu elemente pozitive din x",
@@ -7,6 +7,7 @@
         "Answer4": "Algoritmul are ordinul de complexitate O(n)",
         "Answer5": "Algoritmul are ordinul de complexitate O(n*k)",
         "Answer": "b,d",
+        "Image": "asd_1.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -16,6 +17,7 @@
         "Answer3": "Algoritmul sortează crescător tabloul a",
         "Answer4": "După aplicarea algoritmului, tabloul a satisface proprietatea a[i] ≤ a[n - 1] pentru 0 ≤ i < n",
         "Answer": "b",
+        "Image": "asd_2.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -26,6 +28,7 @@
         "Answer4": "Algoritmul returnează produsul a*b indiferent de paritatea lui a",
         "Answer5": "Dacă a > 2b atunci numărul de operaţii de înmulţire efectuate este mai mic în cazul apelului alg(b,a) decât în cazul apelului alg(a,b)",
         "Answer": "d, e",
+        "Image": "asd_3.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -45,6 +48,7 @@
         "Answer5": "T(n) aparține lui O(n)",
         "Answer6": "T(n) aparține lui O(log n)",
         "Answer": "b,d,f",
+        "Image": "asd_5.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -76,11 +80,12 @@
     },
     {
         "QuestionTitle": "Se consideră următorul algoritm aplicat unui număr n de forma n = ckck-1 . . . c1c0: Dacă p este o variabilă (implicită) care contorizează numărul de executări ale ciclului (contorul ciclului), care este proprietatea invariantă?",
-        "Answer1": "s=c0+c1+...+cp, n=ckck-1...cp",
-        "Answer2": "s=c0+c1+...+cp-1, n=ckck-1...cp",
-        "Answer3": "s=c0+c1+...+cp-1, n=ckck-1...c1c0",
+        "Answer1": "s = c0+c1+...+cp, n = ckck-1...cp",
+        "Answer2": "s = c0+c1+...+cp-1, n = ckck-1...cp",
+        "Answer3": "s = c0+c1+...+cp-1, n = ckck-1...c1c0",
         "Answer4": "n = ckck-1 ...cp",
         "Answer": "b",
+        "Image": "asd_9.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -187,6 +192,7 @@
         "Answer3": "La stergerea nodului 40, acesta va putea fi înlocuit de nodul 38",
         "Answer4": "La stergerea nodului 40, acesta va putea fi înlocuit de nodul 44",
         "Answer": "a,b",
+        "Image": "asd_21.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -196,6 +202,7 @@
         "Answer3": "La stergerea nodului 20, acesta va putea fi inlocuit cu nodul 23",
         "Answer4": "La stergerea nodului 20, acesta va putea fi inlocuit cu nodul 22",
         "Answer": "a,d",
+        "Image": "asd_22.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -205,6 +212,7 @@
         "Answer3": "5,2,1,9,4,6,8,3",
         "Answer4": "1,9,2,5,3,8,6,4",
         "Answer": "b",
+        "Image": "asd_23.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -214,6 +222,7 @@
         "Answer3": "1,2,9,10,16,4,18,3",
         "Answer4": "1,2,3,4,9,10,16,18",
         "Answer": "c",
+        "Image": "asd_24.png",
         "Category": "Algoritmi si structuri de date"
     },
     {
@@ -297,6 +306,7 @@
         "Answer3": "7·2^29",
         "Answer4": "2^32",
         "Answer": "c",
+        "Image": "tgc_5.png",
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
@@ -306,6 +316,7 @@
         "Answer3": "6",
         "Answer4": "7",
         "Answer": "d",
+        "Image": "tgc_6.png",
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
@@ -315,6 +326,7 @@
         "Answer3": "230",
         "Answer4": "234",
         "Answer": "a",
+        "Image": "tgc_7.png",
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
@@ -325,6 +337,7 @@
         "Answer4": "G4",
         "Answer5": "G1,G3",
         "Answer": "b",
+        "Image": "tgc_8.png",
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
@@ -335,6 +348,7 @@
         "Answer4": "G4",
         "Answer5": "216",
         "Answer": "a",
+        "Image": "tgc_9.png",
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
@@ -415,6 +429,7 @@
         "Answer3": "Θ(p·n^3)",
         "Answer4": "Θ(n),Θ(p·2^n)",
         "Answer": "a",
+        "Image": "tgc_17.png",
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
@@ -424,6 +439,7 @@
         "Answer3": "Există o cale de la nodul i la nodul j care trece prin nodul p.",
         "Answer4": "Există o cale de la nodul i la nodul j care trece prin toate nodurile din mulţimea {1, 2, . . . , p}.",
         "Answer": "a",
+        "Image": "tgc_18.png",
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
@@ -433,6 +449,7 @@
         "Answer3": "x+((-1)*0)",
         "Answer4": "0*(y+1)",
         "Answer": "c,d",
+        "Image": "lc_1.png",
         "Category": "Logica Computationala"
     },
     {
@@ -502,6 +519,7 @@
         "Answer3": "{|}",
         "Answer4": "{⊥,→}",
         "Answer": "a,d,f",
+        "Image": "lc_9.png",
         "Category": "Logica Computationala"
     },
     {
@@ -707,6 +725,7 @@
         "Answer4": "Eroare la compilare deoarece functia este apelată fără argumente",
         "Answer5": "None",
         "Answer": "a",
+        "Image": "py_1.png",
         "Category": "Limbajul Python"
     },
     {
@@ -756,6 +775,7 @@
         "Answer4": "22",
         "Answer5": "33",
         "Answer": "b",
+        "Image": "py_6.png",
         "Category": "Limbajul Python"
     },
     {
@@ -766,6 +786,7 @@
         "Answer4": "Persoana(prof1).salut()",
         "Answer5": "Nu putem apela metoda salut() din clasa Persoana deoarece este supraîncărcată în clasa Profesor",
         "Answer": "a,d",
+        "Image": "py_7.png",
         "Category": "Limbajul Python"
     },
     {
@@ -775,6 +796,7 @@
         "Answer3": "Metoda __init__ din clasa A este invocată și se afișează 'i from B is 60'.",
         "Answer4": "Metoda __init__ din clasa A este invocată și se afișează 'i from B is 90'.",
         "Answer": "d",
+        "Image": "py_8.png",
         "Category": "Limbajul Python"
     },
     {
@@ -950,6 +972,7 @@
         "Answer3": "(1, c), (2, b), (3, a)",
         "Answer4": "(1, b), (2, a), (3, c)",
         "Answer": "b",
+        "Image": "cpp_5.png",
         "Category": "Limbajul C++"
     },
     {
@@ -988,6 +1011,7 @@
         "Answer3": "4",
         "Answer4": "5",
         "Answer": "c",
+        "Image": "cpp_9.png",
         "Category": "Limbajul C++"
     },
     {
@@ -996,6 +1020,7 @@
         "Answer2": "clasa Curve nu poate fi instantiată deoarece este clasă abstractă",
         "Answer3": "codul se compilează cu succes",
         "Answer": "b",
+        "Image": "cpp_10.png",
         "Category": "Limbajul C++"
     },
     {
@@ -1077,6 +1102,7 @@
         "Answer3": "a.run( )",
         "Answer4": "new Thread.run( )",
         "Answer": "b",
+        "Image": "java_9.png",
         "Category": "Limbajul Java"
     },
     {
@@ -1087,6 +1113,7 @@
         "Answer4": "static block; method; instance block; constructor;",
         "Answer5": "constructor; static block; instance block; method;",
         "Answer": "b",
+        "Image": "java_10.png",
         "Category": "Limbajul Java"
     },
     {
@@ -1096,6 +1123,7 @@
         "Answer3": "[Ljava.lang.String;@15db9742]",
         "Answer4": "[portocale,ananas,kiwi,mere,banane,pere]",
         "Answer": "b",
+        "Image": "java_11.png",
         "Category": "Limbajul Java"
     },
     {
