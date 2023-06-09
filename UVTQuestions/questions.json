@@ -1297,5 +1297,146 @@
 "Answer": "a,c,e,f,h",
 "Category": "Proiectarea aplicațiilor software"
 },
+	    {
+      "QuestionTitle": "Care din următoarele sunt proprietăţi ale cheii candidate?",
+      "Answer1": "Unicitatea",
+      "Answer2": "Ireductibilitatea",
+      "Answer3": "Segregarea domeniului de valori",
+      "Answer4": "Completitudinea",
+      "Answer": "a,b",
+      "Category": "Baze de date"
+    },
+    {
+      "QuestionTitle": "Care din următoarele sunt limbaje ale bazei de date?",
+      "Answer1": "Data Definition Language (DDL)",
+      "Answer2": "Database Distribution Language (DDL)",
+      "Answer3": "Data Manipulation Language (DML)",
+      "Answer4": "Data Maintenance Language (DML)",
+      "Answer5": "Data Query Language (DQL)",
+      "Answer6": "Data Analysis Language (DAL)",
+      "Answer": "a,c,e",
+      "Category": "Baze de date"
+    },
+    {
+      "QuestionTitle": "Se consideră tabela R(A) conţinând înregistrările {(1), (2)} şi tranzacţiile \n(T1) UPDATE R SET A = A*2 \n(T2) SELECT AVG(A) FROM R; SELECT MAX(A) FROM R \nDacă tranzacţia T2 se execută folosind nivelul de izolare repeatable read, care dintre următoarele afirmaţii este adevărată",
+      "Answer1": "Dacă AVG(A) = 1.5 atunci MAX(A) poate să ia valorile 2 sau 4",
+      "Answer2": "AVG(A) va fi întotdeauna 1.5 iar MAX(A) = 2",
+      "Answer3": "AVG(A) poate să ia valorile 1.5 sau 3, iar MAX(A) valorile 2 sau 4",
+      "Answer4": "Dacă MAX(A) = 4 atunci AVG(A) este 1.5",
+      "Answer": "c",
+      "Category": "Baze de date"
+    },
+    {
+      "QuestionTitle": "Care dintre următoarele aspecte sunt adresate de normalizare?",
+      "Answer1": "Anomaliile la ştergere",
+      "Answer2": "Anomaliile la inserare",
+      "Answer3": "Anomaliile la actualizare",
+      "Answer4": "Redundanţa datelor",
+      "Answer5": "Volumul datelor",
+      "Answer": "a,b,c,d",
+      "Category": "Baze de date"
+    },
+	{
+      "QuestionTitle": "Trei dintre expresiile relaţionale de mai jos returnează numele studenţilor care nu au aplicat la specializările CS sau PH. Care returnează altceva? (Observaţie: numele studenţilor pot fi duplicate.)",
+       "Answer1": "bd_5_a.png",
+        "Answer2": "bd_5_b.png",
+        "Answer3": "bd_5_c.png",
+        "Answer4": "bd_5_d.png",
+	  "Answer": "d",
+      "Category": "Baze de date"
+    },
+	  {
+      "QuestionTitle": "Consideraţi următoarea interogare SQL. Care dintre indecşii următori sunt cei mai potriviţi pentru accelearea execuţiei interogării de mai sus?",
+      "Answer1": "Student.sID şi Student.Bac",
+      "Answer2": "Apply.cName şi College.cName",
+      "Answer3": "Apply.sID şi College.cName",
+      "Answer4": "Apply.sID şi Student.Bac",
+      "Answer": "c",
+	  "Image":"bd_6.png",
+      "Category": "Baze de date"
+    },
+	    {
+      "QuestionTitle": "Ce returnează următoarea interogare SQL?",
+      "Answer1": "numele salariaţilor care ar trece la următorul nivel de salarizare după o creştere de 25% a salariului.",
+      "Answer2": "numele managerilor care ar trece la următorul nivel de salarizare după o creştere de 25% a salariului.",
+      "Answer3": "angajaţii care ar trece la următorul nivel de salarizare după o creştere a salariului de 25%, dacă salariul lor se situează între salariul minim şi cel maxim.",
+      "Answer4": "Niciuna dintre cele enumerate mai sus.",
+      "Answer": "b",
+	  "Image":"bd_7.png",
+      "Category": "Baze de date"
+    },
+		    {
+      "QuestionTitle": "Tabelul de mai jos conţine un eşantion de date reprezentativ pentru toate dependenţele funcţionale dintr-un set de date real. Care sunt dependenţe funcţionale ce pot fi extrase din aceste date?",
+      "Answer1": "A → {B, C}, E → {F}",
+      "Answer2": "D → {A, B, C, E, F}, F → {E}",
+      "Answer3": "{A, E} → {D}",
+      "Answer4": "{D, E} → {A, B}",
+      "Answer": "a,c",
+	  "Image":"bd_8.png",
+      "Category": "Baze de date"
+    },
+	{
+  "QuestionTitle": "Considerând relaţia R(A, B, C, D, E, F) unde A - F sunt coloanele din tabelul de mai sus şi dependenţele funcţionale tot cele de mai sus, care dintre următoarele seturi de atribute este cheie candidată?",
+  "Answer1": "{B, F}",
+  "Answer2": "{A, E}",
+  "Answer3": "{A, E, D}",
+  "Answer4": "{A}",
+  "Answer": "b",
+  "Category": "Baze de date"
+},
+  {
+  "QuestionTitle": "Relativ la relaţia R de mai sus, care dintre următoarele afirmaţii sunt false?",
+  "Answer1": "Relaţia se află în prima formă normală",
+  "Answer2": "Relaţia se află în a doua formă normală",
+  "Answer3": "La o adresă (coloana B) nu pot corespunde valori diferite în coloana A",
+  "Answer4": "Nu pot exista două înregistrări în tabela R cu valori diferite în coloana D dacă valorile din coloana A sunt identice",
+  "Answer": "b,c,d",
+  "Category": "Baze de date"
+  },
+{
+  "QuestionTitle": "Fie relața R(A,B,C,D,E) în care se verifică următoarele dependențe funcționale D → C, {C,E} → A, D → A, {B,E} → D. Care dintre următoarele seturi de atribute este cheie a relației?",
+  "Answer1": "{B, E}",
+  "Answer2": "{C, D}",
+  "Answer3": "{A, C}",
+  "Answer4": "{A, C, E}",
+  "Answer": "a",
+  "Category": "Baze de date"
+},
+{
+  "QuestionTitle": "Fie următoarea diagramă E/R. Care dintre următoarele relat,ii fac parte din reprezentarea acestei diagrame în modelul relaţional?",
+  "Answer1": "Courses(CID, title)",
+  "Answer2": "Students(SID, name)",
+  "Answer3": "Enroll(SID,CID)",
+  "Answer4": "Enroll(SID, name, CID, title, grade)",
+  "Answer5": "Students(SID, name, CID)",
+  "Answer6": "Enroll(SID, CID, grade)",
+  "Answer": "a,b,f",
+  "Image":"bd_12.png",
+  "Category": "Baze de date"
+},
+{
+  "QuestionTitle": "Se dau tabelele R(A,B), S(B,C) care conţin următoarele înregistrări R=(1,2), (2,2), (5,1), iar S=(2, 2), (2, 1). Fie vederea V definită prin următoarea interogare \nSELECT A, C FROM R JOIN S ON R.B = S.B \n Care dintre următoarele înregistrări fac parte din vederea V?",
+  "Answer1": "(1,1)",
+  "Answer2": "(1,2)",
+  "Answer3": "(2,1)",
+  "Answer4": "(2,2)",
+  "Answer5": "(5,1)",
+  "Answer6": "(5,2)",
+  "Answer7": "(1,5)",
+  "Answer8": "(2,5)",
+  "Answer": "a,b,c,d",
+  "Category": "Baze de date"
+},
+{
+  "QuestionTitle": "Care dintre următoarele instrucţiuni poate fi folosită ca instrucţiune următoare în secvenţa de cod de mai jos?",
+  "Answer1": "END TRANSACTION",
+  "Answer2": "END",
+  "Answer3": "COMMIT",
+  "Answer4": "ROLLBACK TRANSACTION",
+  "Answer": "c,d",
+  "Image":"bd_14.png",
+  "Category": "Baze de date"
+}
+	
     
 ]
