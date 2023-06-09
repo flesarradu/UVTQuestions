@@ -1565,6 +1565,167 @@
   "Answer": "a,c",
   "Category": "Arhitectura calculatoarelor"
 },
+{
+"QuestionTitle": "Care dintre următoarele mecanisme pot fi folosite pentru o implementare corectă a problemei secțiunii critice fără utilizarea așteptării active?",
+"Answer1": "semafoare",
+"Answer2": "algoritmul lui Dekker",
+"Answer3": "algoritmul lui Peterson",
+"Answer4": "mecanismul TSL",
+"Answer5": "monitoare",
+"Answer": "a,e",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Se consideră 5 segmente de memorie (A,B,C,D,E) cu mărimile 2k, 6k, 4k, 3k, 4k şi o memorie totală de 16k. În memorie se încarcă în ordine segmentele A, B, C, D. Care dintre aceste segmente urmează să fie evacuat pentru a putea permite încărcarea ulterioară a segmentului E?",
+"Answer1": "A",
+"Answer2": "B",
+"Answer3": "C",
+"Answer4": "D",
+"Answer5": "niciunul",
+"Answer": "b,c,d",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Care dintre problemele clasice de comunicare între procese pune în evidenţă o situaţie de impas?",
+"Answer1": "Problema filosofilor la masă",
+"Answer2": "Problema cititorilor şi scriitorilor",
+"Answer3": "Problema producător-consumator",
+"Answer4": "Problema frizerului",
+"Answer5": "niciuna dintre aceste probleme",
+"Answer": "a",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Se consideră un set de 10 procese planificate conform algoritmului Round Robin. Se cunosc următoarele informaţii: cuanta utilizată este 8, numărul final de comutări de context este 25, valoarea raportului T1/T2 = 2.25, unde T1 şi T2 sunt timpii estimaţi de execuţie pentru cel mai lung si cel mai scurt proces, pentru care timpul estimat de execuţie depăşeşte valoarea cuantei (cu cel puțin 25%). Determinaţi cea mai mică valoare posibilă pentru perechea (T1, T2).",
+"Answer1": "27, 12",
+"Answer2": "31, 14",
+"Answer3": "34, 15",
+"Answer4": "36, 16",
+"Answer": "a",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Se consideră un set de 10 procese planificate conform algoritmuluii SJF, în care procesele sosesc în sistem la momentele T1 = 0, T2 = 13, T3 = 26. La fiecare moment sosesc cel puţin 3 procese, cu timpi estimaţi de execuţie diferiţi. Dacă pentru procesele P1, P5 şi P7 avem timpii de aşteptare 0, 0, 0 şi timpii de răspuns 14, 3, 6, identificaţi la ce moment a sosit procesul P1, apoi răspundeţi la următoarea întrebare: determinaţi timpii estimaţi de execuţie pentru cel puţin 6 procese, ştiind că nu există perioade de pauză ale procesorului şi că pot exista procese cu acelaşi timp estimat de execuţie, sosite la momente diferite?",
+"Answer1": "3, 4, 5, 6, 7, 8",
+"Answer2": "3, 4, 5, 6, 6, 8",
+"Answer3": "3, 4, 5, 6, 7, 14",
+"Answer4": "3, 4, 6, 6, 7, 14",
+"Answer": "d",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Într-un sistem pe 16 biţi cu 8 pagini virtuale şi 4 pagini cadru este folosit pentru paginare algoritmul FIFO. La un moment dat, în memorie sunt mapate paginile (2, 5, 7, 1). După acest moment vor fi accesate următoarele adrese: 12411, 16729, 2560, 9215, 20952. Care va fi maparea paginilor după ultima accesare, ştiind că următoarea pagină evacuată este prima pagină cadru?",
+"Answer1": "5, 2, 0, 4",
+"Answer2": "3, 4, 2, 5",
+"Answer3": "2, 5, 0, 3",
+"Answer4": "5, 4, 0, 2",
+"Answer": "d",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Într-un sistem pe 16 biţi cu 8 pagini virtuale şi 4 pagini cadru este folosit pentru paginare algoritmul Ceasului, fără îmbătrânire. La un moment dat, în memorie sunt mapate paginile (2, 5, 7, 1) iar următoarea pagină testată va fi prima pagină cadru. După încercările de acces către paginile, nu neapărat în această ordine, 1, 2, 3, 4, 5, 7 maparea devine (1, 5, 7, 2). Care dintre cele 4 pagini iniţiale au avut bitul R setat?",
+"Answer1": "toate",
+"Answer2": "niciuna",
+"Answer3": "paginile 5 si 7",
+"Answer4": "paginile 2, 5 si 7",
+"Answer": "c",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Se consideră situaţia a 3 fire de control a execuţiei care partajează variabilele A şi B. Accesul către cele două variabile este nerestricţionat, iar operaţiile realizate sunt, în fiecare fir de control a execuţiei, următoarele A = A+B,B = A−B,A = A−B. Precizaţi care dintre următoarele valori sunt posibile la sfârşitul execuţiei celor trei fire de control a execuţiei, atunci când A = 5,B = 7",
+"Answer1": "A = 5, B = 7",
+"Answer2": "A = 7, B = 5",
+"Answer3": "A = -29, B = 17",
+"Answer4": "A = -31, B = 19",
+"Answer": "b,d",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Se consideră o situaţie simplă cu 6 procese şi un singur tip de resurse. Starea sistemului este descrisă prin Are = (4, 2, 0, 5, 1, 4), Max = (8, 10, 10, 25, 25, 30), Disponibil = D. Determinaţi valoarea minimă D pentru care starea este sigură şi permite apoi alocarea a 3 resurse suplimentare către procesul al doilea.",
+"Answer1": "D = 12",
+"Answer2": "D = 14",
+"Answer3": "D = 13",
+"Answer4": "D = 11",
+"Answer": "b",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Se consideră o situaţie simplă cu 6 procese şi un singur tip de resurse. Starea sistemului este descrisă prin Are = (4, 2, 0, 5, 1, 4), Max = (14, 6, 8, 29, 27, 24), Disponibil = D. Determinaţi valoarea minimă D pentru care starea este sigură şi permite apoi alocarea a 3 resurse suplimentare către procesul al treilea.",
+"Answer1": "D = 11",
+"Answer2": "D = 13",
+"Answer3": "D = 14",
+"Answer4": "D = 12",
+"Answer": "c",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Care dintre următoarele reprezintă operaţii atomice permise asupra semafoarelor?",
+"Answer1": "wait",
+"Answer2": "up",
+"Answer3": "sleep",
+"Answer4": "down",
+"Answer": "b,d",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "O instrucţiune TSL ar trebui să fie executată?",
+"Answer1": "după fiecare proces în parte",
+"Answer2": "periodic",
+"Answer3": "într-o manieră atomică",
+"Answer4": "în niciuna dintre situaţiile precizate",
+"Answer": "c",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "O unitate de execuţie care nu poate fi întreruptă este",
+"Answer1": "simplă",
+"Answer2": "statică",
+"Answer3": "atomică",
+"Answer4": "dinamică",
+"Answer": "c",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Precizaţi principalele dezavantaje ale spinlock-urilor",
+"Answer1": "nu sunt eficiente pentru multe multe procese",
+"Answer2": "implică tehnici de aşteptare activă",
+"Answer3": "pot fi nesigure ocazional",
+"Answer4": "sunt prea complexe pentru programatori",
+"Answer": "b",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Fiecare dintre procesele Pi, cu i = 0, 1, . . . , 9 este caracterizat prin următoarea secvență de cod. Într-un al 11-lea proces, P10, liniile up(mutex) și down(mutex) au fost inversate. Care este numărul maxim de procese care s-ar putea găsi simultan în regiunea critică în acest caz, știind că inițial este permisă trecerea prin mutex?",
+"Answer1": "1",
+"Answer2": "2",
+"Answer3": "3",
+"Answer4": "Oricare dintre variantele a), b), c)",
+"Answer5": "Niciuna dintre variantele a), b), c)",
+"Answer": "d",
+"Image": "so_15.png",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Într-un sistem se găsesc trei procese concurente, în care se găsesc următoarele bucăți de cod, sincronizate prin trei semafoare binare. Semafoarele sunt init, ializate cu valorile S0 = 1, S1 = 0 și S2 = 0. De câte ori va executa primul proces linia print ‘0’ ?",
+"Answer1": "Cel put,in de două ori",
+"Answer2": "Exact de două ori",
+"Answer3": "Exact de trei ori",
+"Answer4": "Cel mult de trei ori",
+"Answer5": "Exact o dată",
+"Answer": "a",
+"Image": "so_16.png",
+"Category": "Sisteme de operare"
+},
+{
+"QuestionTitle": "Modificarea unui semafor este posibilă în",
+"Answer1": "secțiunea critică",
+"Answer2": "zona aflată înaintea unei secțiuni critice",
+"Answer3": "zona situată după secțiunea critică",
+"Answer4": "oricare dintre aceste zone",
+"Answer5": "niciuna dintre aceste zone",
+"Answer": "a",
+"Category": "Sisteme de operare"
+},
 	
     
 ]
