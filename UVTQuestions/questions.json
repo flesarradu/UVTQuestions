@@ -1726,6 +1726,95 @@
 "Answer": "a",
 "Category": "Sisteme de operare"
 },
-	
+{
+"QuestionTitle": "Intr-un segment TCP ce câmp permite nodului receptor să determine dacă un segment TCP a fost deteriorat în timpul transmisiei?",
+"Answer1": "suma de control",
+"Answer2": "flags",
+"Answer3": "hash",
+"Answer4": "padding",
+"Answer": "a",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Care dintre următoarele dispozitive se află la nivelul 2 OSI?",
+"Answer1": "bridge(punte)",
+"Answer2": "repeater(repetor)",
+"Answer3": "router",
+"Answer4": "switch",
+"Answer5": "hub",
+"Answer": "a,d",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Pentru a asigura integritatea datelor, protocoalele orientate pe conexiune (ca TCP) folosesc:",
+"Answer1": "semnătura digitala",
+"Answer2": "certificate digitale",
+"Answer3": "algoritmi de criptare simetrici",
+"Answer4": "suma de control (checksum)",
+"Answer": "d",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Ordinea corectă a încapsulării mesajelor este:",
+"Answer1": "date, cadre, pachete, segmente, biți",
+"Answer2": "segmente, date, pachete, cadre, biți",
+"Answer3": "date, segmente, pachete, cadre, biți",
+"Answer4": "date, segmente, cadre, pachete, biți",
+"Answer": "c",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Ce afirmații sunt adevărate despre protocolul TCP?",
+"Answer1": "este un protocol orientat de datagrame",
+"Answer2": "este un protocol orientat pe conexiune",
+"Answer3": "nu folosește sume de control",
+"Answer4": "asigură segmentare și reasamblare",
+"Answer": "b,d",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Care din următoarele adrese IP se încadrează în blocul CIDR din 115.64.4.0/22? (Alegeti două.)",
+"Answer1": "115.64.8.32",
+"Answer2": "115.64.6.255",
+"Answer3": "115.64.8.31",
+"Answer4": "115.64.5.128",
+"Answer": "b,d",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Ce informații sunt conținute de headerul unui frame Ethernet?",
+"Answer1": "sursa și destinatia adresei de hardware",
+"Answer2": "sursa și destinatia adresei de rețea",
+"Answer3": "codul de corectare a erorilor",
+"Answer4": "codul de autentificare",
+"Answer": "a",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Care din următoarele afirmații sunt adevărate referitor la switch?",
+"Answer1": "crează un singur domeniu de coliziune și un singur domeniu de broadcast",
+"Answer2": "crează diferite domenii de coliziune dar un singur domeniu de broadcast",
+"Answer3": "crează diferite domenii de coliziune și diferite domenii de broadcast",
+"Answer": "b",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Care din următoarele adrese IP este un exemplu valid de adresă IPv4?",
+"Answer1": "144.92.254.253",
+"Answer2": "144-92-43-178",
+"Answer3": "144.92.256.176",
+"Answer4": "144,92,43,178",
+"Answer": "a",
+"Category": "Rețele de calculatoare"
+},
+{
+"QuestionTitle": "Care este semnificația acronimului CSMA/CD?",
+"Answer1": "Carrier Service Multiple Access with Collision Detection",
+"Answer2": "Carrier Sense Multiple Access with Collision Avoidance",
+"Answer3": "Carrier Sense Multiple Access with Collision Detection",
+"Answer4": "Control Sense Multiple Access with Collision Direction",
+"Answer": "c",
+"Category": "Rețele de calculatoare"
+}	
     
 ]
