@@ -1436,7 +1436,135 @@
   "Answer": "c,d",
   "Image":"bd_14.png",
   "Category": "Baze de date"
-}
+},
+	{
+  "QuestionTitle": "Registrul Program Contor conține:",
+  "Answer1": "adresa următoarei instrucțiuni din memorie",
+  "Answer2": "adresa datelor extrase din memorie",
+  "Answer3": "rezultatul operațiilor aritmetice efectuate",
+  "Answer4": "adresa de unde va fi extrasă instrucțiunea ce urmează a fi executată",
+  "Answer": "d",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Timpul mediu necesar pentru a accesa o locație de memorie și a prelua conținutul acesteia poartă numele de:",
+  "Answer1": "timp de latență",
+  "Answer2": "timp de căutare",
+  "Answer3": "timp de acces",
+  "Answer4": "timp de răspuns",
+  "Answer": "c",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Tipul de memorie folosit pentru a crește viteza de procesare a unui calculator este:",
+  "Answer1": "RAM",
+  "Answer2": "Cache",
+  "Answer3": "BIOS",
+  "Answer4": "ROM",
+  "Answer": "b",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Suma dintre -6 și -13, folosind reprezentarea în complement față de 2, este:",
+  "Answer1": "11101101",
+  "Answer2": "11100001",
+  "Answer3": "01010101",
+  "Answer4": "10101011",
+  "Answer": "a",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Care este valoarea stocată la adresa c după executarea următoarei secvențe de cod?",
+  "Answer1": "ac_5_a.png",
+  "Answer2": "ac_5_b.png",
+  "Answer3": "ac_5_c.png",
+  "Answer4": "ac_5_d.png",
+  "Answer": "a,d",
+  "Image":"ac_5.png"
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Ce tehnică ajută procesorul să ruleze un program concomitent cu operațiile de intrare/ieșire?",
+  "Answer1": "DMA",
+  "Answer2": "transfer prin program",
+  "Answer3": "niciunul dintre răspunsuri",
+  "Answer4": "transfer prin întreruperi",
+  "Answer": "d",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Care este cea mai mare unitate de transfer a datelor din memoria unui sistem de calcul?",
+  "Answer1": "cuvânt",
+  "Answer2": "bloc",
+  "Answer3": "bit",
+  "Answer4": "niciuna dintre acestea",
+  "Answer": "b",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Pentru un număr dat/fix de biți, numărul de valori distincte care pot fi reprezentate este:",
+  "Answer1": "mai mare pentru întregi fără semn",
+  "Answer2": "mai mare pentru întregi cu semn",
+  "Answer3": "același pentru întregi cu semn și întregi fără semn",
+  "Answer": "c",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Diferența între procesoarele CISC și RISC constă în:",
+  "Answer1": "procesoarele CISC au un număr mai mare de instrucțiuni",
+  "Answer2": "procesoarele RISC prezintă riscuri mai mari în utilizare",
+  "Answer3": "procesoarele RISC execută o instrucțiune într-un singur ciclu",
+  "Answer": "a,c",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "O întrerupere hardware reprezintă:",
+  "Answer1": "un semnal sincron/asincron la un periferic care semnalizează apariția unui eveniment care trebuie tratat de către procesor",
+  "Answer2": "întreruperea funcționării procesorului în urma unui bug software",
+  "Answer3": "întreruperea unui circuit de conectare între două sau mai multe componente hardware",
+  "Answer": "a",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Arhitectura Harvard are:",
+  "Answer1": "două magistrale, una pentru date și una pentru instrucțiuni",
+  "Answer2": "două memorii, una pentru date și una pentru instrucțiuni/program",
+  "Answer3": "drept dezavantaj major faptul că magistrala de date este mai ocupată decât magistrala de program",
+  "Answer": "a,b,c",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "La magistralele sincrone:",
+  "Answer1": "ciclurile de transfer sunt direct corelate cu semnalul de tact (CPU clock)",
+  "Answer2": "nu există o legatură directă între evoluția în timp a unui ciclu de transfer și semnalul de tact al ceasului procesorului",
+  "Answer3": "se face permanent o sincronizare a acestora cu magistralele asincrone",
+  "Answer": "a",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "O poartă logică este:",
+  "Answer1": "un program software capabil să efectueze o anumită operație (logică) asupra unor semnale electrice",
+  "Answer2": "un conector care permite preluarea valorilor logice de la utilizator",
+  "Answer3": "un dispozitiv hardware capabil să efectueze o anumită operație (logică) asupra unor semnale electrice",
+  "Answer": "c",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Circuitele de memorare SR-latch (S-Set, R-Reset):",
+  "Answer1": "Stochează o singură valoare binară",
+  "Answer2": "Ieșirile celor două porturi logice folosite pentru realizare sunt tot timpul complementare",
+  "Answer3": "Setează și resetează în mod continuu valorile numerice stocate",
+  "Answer": "a,b",
+  "Category": "Arhitectura calculatoarelor"
+},
+{
+  "QuestionTitle": "Circuit combinational:",
+  "Answer1": "Este un circuit format din porți logice, care nu are memorie și al cărui output depinde doar de inputul prezent/curent, NU de inputul precedent sau de starea curentă în care se află circuitul",
+  "Answer2": "Este un circuit electric în care informațiile sunt combinate în mod aleator pentru a obține valori aleatoare",
+  "Answer3": "Este un circuit care transpus într-un graf nu conține cicluri",
+  "Answer": "a,c",
+  "Category": "Arhitectura calculatoarelor"
+},
 	
     
 ]
