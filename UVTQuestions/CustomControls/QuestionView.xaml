@@ -18,13 +18,18 @@
                         FontSize="Header" HorizontalOptions="CenterAndExpand"
                         VerticalOptions="Center" Margin="25"/>
                 <Image Grid.Row="1" Source="{Binding Question.Image}" />
+                
                 <CollectionView Grid.Row="2" x:Name="collectionView" ItemsSource="{Binding Question.Answers2}">
                     <CollectionView.ItemTemplate>
                         <DataTemplate x:DataType="uvtquestions:QuestionParameter">
-                            <customControls:CustomCheckBox Text="{Binding Text}" IsChecked="{Binding IsChecked}" />
+                            <Grid RowDefinitions="Auto, 1">
+                                <customControls:CustomCheckBox Grid.Row="0" Text="{Binding Text}" IsChecked="{Binding IsChecked}" />
+                                <BoxView Grid.Row="1" HeightRequest="1" Color="{StaticResource Tertiary}" />
+                            </Grid>
                         </DataTemplate>
                     </CollectionView.ItemTemplate>            
                 </CollectionView>
+                <BoxView Grid.Row="2" VerticalOptions="Start" HeightRequest="1" Color="{StaticResource Tertiary}"/>
         </Grid>
     </ScrollView>
 </ContentView>

@@ -19,6 +19,7 @@
          <Image x:Name="image"
                Grid.Row="1"
                Grid.Column="1"
+               Margin="0,0,10,0"
                IsVisible="{Binding Text, Source={x:Reference this}, Converter={StaticResource IsImageSourceConverter}}"
                Source="{Binding Text, Source={x:Reference this}}"
                VerticalOptions="Center"
@@ -32,6 +33,8 @@
                Grid.Column="1"
                Text="{Binding Text, Source={x:Reference this}}"
                IsVisible="{Binding IsVisible, Source={x:Reference image}, Converter={StaticResource InvertedBoolConverter}}"
+               Margin="0,0,10,0"
+               LineBreakMode="WordWrap"
                VerticalOptions="Center"
                HorizontalOptions="FillAndExpand">
             <Label.GestureRecognizers>
