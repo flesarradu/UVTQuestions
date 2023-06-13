@@ -3,17 +3,29 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:customControls="clr-namespace:UVTQuestions.CustomControls"
              x:Class="UVTQuestions.CustomControls.QuestionView"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:uvtquestions="clr-namespace:UVTQuestions"
              x:Name="this">
-    <Grid RowDefinitions="*, Auto, Auto, Auto, Auto, 1" HorizontalOptions="FillAndExpand" 
-          VerticalOptions="Fill" BindingContext="{x:Reference this}">            
-            <Label Grid.Row="0" Text="{Binding QuestionTitle}" MaxLines="10" LineBreakMode="WordWrap"
-                   FontSize="Header" HorizontalOptions="CenterAndExpand"
-                   VerticalOptions="Center" Margin="25"/>
-            <customControls:CustomCheckBox x:Name="checBox1" Grid.Row="1" Text="{Binding Answer1}" Margin="5,0,5,5"/>
-            <customControls:CustomCheckBox x:Name="checBox2" Grid.Row="2" Text="{Binding Answer2}" Margin="5,0,5,5"/>
-            <customControls:CustomCheckBox x:Name="checBox3" Grid.Row="3" Text="{Binding Answer3}" Margin="5,0,5,5"/>
-            <customControls:CustomCheckBox x:Name="checBox4" Grid.Row="4" Text="{Binding Answer4}" Margin="5,0,5,100"/>
-            <BoxView HeightRequest="1" Grid.Row="5" Color="{StaticResource Tertiary}"/>
-    </Grid>
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <toolkit:IsNullConverter x:Key="IsNullConverter" />
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ScrollView>
+        <Grid RowDefinitions="Auto, Auto, *" HorizontalOptions="FillAndExpand" 
+              VerticalOptions="Fill" BindingContext="{x:Reference this}">            
+                <Label Grid.Row="0"  Text="{Binding Question.QuestionTitle}" MaxLines="10" LineBreakMode="WordWrap"
+                        FontSize="Header" HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="Center" Margin="25"/>
+                <Image Grid.Row="1" Source="{Binding Question.Image}" />
+                <CollectionView Grid.Row="2" x:Name="collectionView" ItemsSource="{Binding Question.Answers2}">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="uvtquestions:QuestionParameter">
+                            <customControls:CustomCheckBox Text="{Binding Text}" IsChecked="{Binding IsChecked}" />
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>            
+                </CollectionView>
+        </Grid>
+    </ScrollView>
 </ContentView>
 

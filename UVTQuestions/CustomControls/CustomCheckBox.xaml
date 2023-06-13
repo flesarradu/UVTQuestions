@@ -1,18 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:UVTQuestions.Converters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Name="this"
              x:Class="UVTQuestions.CustomControls.CustomCheckBox">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converters:IsImageSourceConverter x:Key="IsImageSourceConverter"/>
+            <toolkit:InvertedBoolConverter x:Key="InvertedBoolConverter"/>
+        </ResourceDictionary>
+    </ContentView.Resources>
 
     <Grid BackgroundColor="LightSkyBlue" RowDefinitions="1, *" ColumnDefinitions="Auto, *" HorizontalOptions="FillAndExpand">
         <Grid.GestureRecognizers>
             <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
         </Grid.GestureRecognizers>
-        
+         <Image x:Name="image"
+               Grid.Row="1"
+               Grid.Column="1"
+               IsVisible="{Binding Text, Source={x:Reference this}, Converter={StaticResource IsImageSourceConverter}}"
+               Source="{Binding Text, Source={x:Reference this}}"
+               VerticalOptions="Center"
+               HorizontalOptions="End">
+            <Image.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Image.GestureRecognizers>
+        </Image>
         <Label
                Grid.Row="1"
                Grid.Column="1"
                Text="{Binding Text, Source={x:Reference this}}"
+               IsVisible="{Binding IsVisible, Source={x:Reference image}, Converter={StaticResource InvertedBoolConverter}}"
                VerticalOptions="Center"
                HorizontalOptions="FillAndExpand">
             <Label.GestureRecognizers>

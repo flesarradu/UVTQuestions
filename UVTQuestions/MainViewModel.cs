@@ -19,7 +19,11 @@ namespace UVTQuestions
         [ObservableProperty]
         private string _answered;
 
+        [ObservableProperty]
+        private string _userMessage;
+
         private IQuestionService _questionService;
+        private int answered = 1;       
 
 		public MainViewModel(IQuestionService questionService)
 		{
@@ -28,13 +32,17 @@ namespace UVTQuestions
             LoadQuestion();
         }
 
+        
+
         private void LoadQuestion()
         {
             CurrentQuestion = _questionService.GetQuestion();
+            UserMessage = $"Question {answered++} of {_questionService.Questions.Count}.";
         }
         private void NextQuestion()
         {
             CurrentQuestion = _questionService.GetQuestion();
+            UserMessage = $"Question {answered++} of {_questionService.Questions.Count}.";
         }
 
         [RelayCommand]
@@ -49,6 +57,11 @@ namespace UVTQuestions
             {
                 Vibration.Vibrate(100);
             }
+        }
+        [RelayCommand]
+        public async Task NextQuestionAsync()
+        {
+            NextQuestion();
         }
 	}
 }

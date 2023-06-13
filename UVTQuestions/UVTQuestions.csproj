@@ -49,6 +49,7 @@
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiAsset Include="questions.json" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -60,15 +61,111 @@
 	<ItemGroup>
 	  <None Remove="CustomControls\" />
 	  <None Remove="Services\" />
-	  <None Update="questions.json">
-		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-	  </None>
+	  <None Remove="questions.json" />
+	  <None Remove="Resources\Images\asd_1.png" />
+	  <None Remove="Resources\Images\asd_2.png" />
+	  <None Remove="Resources\Images\asd_3.png" />
+	  <None Remove="Resources\Images\asd_5.png" />
+	  <None Remove="Resources\Images\asd_9.png" />
+	  <None Remove="Resources\Images\asd_21.png" />
+	  <None Remove="Resources\Images\asd_22.png" />
+	  <None Remove="Resources\Images\asd_23.png" />
+	  <None Remove="Resources\Images\asd_24.png" />
+	  <None Remove="Resources\Images\lc_1.png" />
+	  <None Remove="Resources\Images\lc_9.png" />
+	  <None Remove="Resources\Images\tgc_5.png" />
+	  <None Remove="Resources\Images\tgc_6.png" />
+	  <None Remove="Resources\Images\tgc_7.png" />
+	  <None Remove="Resources\Images\tgc_8.png" />
+	  <None Remove="Resources\Images\tgc_9.png" />
+	  <None Remove="Resources\Images\tgc_17.png" />
+	  <None Remove="Resources\Images\tgc_18.png" />
+	  <None Remove="Converters\" />
+	  <None Remove="Resources\Images\ac_5_c.png" />
+	  <None Remove="Resources\Images\ac_5_a.png" />
+	  <None Remove="Resources\Images\ac_5_b.png" />
+	  <None Remove="Resources\Images\ac_5_d.png" />
+	  <None Remove="Resources\Images\ac_5.png" />
+	  <None Remove="Resources\Images\bd_3.png" />
+	  <None Remove="Resources\Images\bd_5_a.png" />
+	  <None Remove="Resources\Images\bd_5_b.png" />
+	  <None Remove="Resources\Images\bd_5_c.png" />
+	  <None Remove="Resources\Images\bd_5_d.png" />
+	  <None Remove="Resources\Images\bd_5.png" />
+	  <None Remove="Resources\Images\bd_6.png" />
+	  <None Remove="Resources\Images\bd_7.png" />
+	  <None Remove="Resources\Images\bd_8.png" />
+	  <None Remove="Resources\Images\bd_12.png" />
+	  <None Remove="Resources\Images\bd_14.png" />
+	  <None Remove="Resources\Images\pas_5.png" />
+	  <None Remove="Resources\Images\pas_6.png" />
+	  <None Remove="Resources\Images\pas_7.png" />
+	  <None Remove="Resources\Images\pas_8.png" />
+	  <None Remove="Resources\Images\pas_9.png" />
+	  <None Remove="Resources\Images\pas_10.png" />
+	  <None Remove="Resources\Images\pas_11.png" />
+	  <None Remove="Resources\Images\pas_12.png" />
+	  <None Remove="Resources\Images\pas_14.png" />
+	  <None Remove="Resources\Images\so_15.png" />
+	  <None Remove="Resources\Images\so_16.png" />
+	  <None Remove="Resources\Images\cpp_5.png" />
+	  <None Remove="Resources\Images\cpp_9.png" />
+	  <None Remove="Resources\Images\cpp_10.png" />
+	  <None Remove="Resources\Images\java_9.png" />
+	  <None Remove="Resources\Images\java_10.png" />
+	  <None Remove="Resources\Images\java_11.png" />
+	  <None Remove="Resources\Images\py_1.png" />
+	  <None Remove="Resources\Images\py_6.png" />
+	  <None Remove="Resources\Images\py_7.png" />
+	  <None Remove="Resources\Images\py_8.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="CustomControls\" />
 	  <Folder Include="Services\" />
+	  <Folder Include="Converters\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <BundleResource Include="questions.json" />
+	  <EmbeddedResource Include="questions.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </EmbeddedResource>
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\ac_5_c.png" />
+	  <BundleResource Include="Resources\Images\ac_5_a.png" />
+	  <BundleResource Include="Resources\Images\ac_5_b.png" />
+	  <BundleResource Include="Resources\Images\ac_5_d.png" />
+	  <BundleResource Include="Resources\Images\ac_5.png" />
+	  <BundleResource Include="Resources\Images\bd_3.png" />
+	  <BundleResource Include="Resources\Images\bd_5_a.png" />
+	  <BundleResource Include="Resources\Images\bd_5_b.png" />
+	  <BundleResource Include="Resources\Images\bd_5_c.png" />
+	  <BundleResource Include="Resources\Images\bd_5_d.png" />
+	  <BundleResource Include="Resources\Images\bd_5.png" />
+	  <BundleResource Include="Resources\Images\bd_6.png" />
+	  <BundleResource Include="Resources\Images\bd_7.png" />
+	  <BundleResource Include="Resources\Images\bd_8.png" />
+	  <BundleResource Include="Resources\Images\bd_12.png" />
+	  <BundleResource Include="Resources\Images\bd_14.png" />
+	  <BundleResource Include="Resources\Images\pas_5.png" />
+	  <BundleResource Include="Resources\Images\pas_6.png" />
+	  <BundleResource Include="Resources\Images\pas_7.png" />
+	  <BundleResource Include="Resources\Images\pas_8.png" />
+	  <BundleResource Include="Resources\Images\pas_9.png" />
+	  <BundleResource Include="Resources\Images\pas_10.png" />
+	  <BundleResource Include="Resources\Images\pas_11.png" />
+	  <BundleResource Include="Resources\Images\pas_12.png" />
+	  <BundleResource Include="Resources\Images\pas_14.png" />
+	  <BundleResource Include="Resources\Images\so_15.png" />
+	  <BundleResource Include="Resources\Images\so_16.png" />
+	  <BundleResource Include="Resources\Images\cpp_5.png" />
+	  <BundleResource Include="Resources\Images\cpp_9.png" />
+	  <BundleResource Include="Resources\Images\cpp_10.png" />
+	  <BundleResource Include="Resources\Images\java_9.png" />
+	  <BundleResource Include="Resources\Images\java_10.png" />
+	  <BundleResource Include="Resources\Images\java_11.png" />
+	  <BundleResource Include="Resources\Images\py_1.png" />
+	  <BundleResource Include="Resources\Images\py_6.png" />
+	  <BundleResource Include="Resources\Images\py_7.png" />
+	  <BundleResource Include="Resources\Images\py_8.png" />
 	</ItemGroup>
 </Project>

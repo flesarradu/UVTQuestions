@@ -24,7 +24,8 @@ public partial class CustomCheckBox : ContentView
         nameof(IsChecked),
         typeof(bool),
         typeof(QuestionView),
-        false);
+        false,
+        BindingMode.TwoWay);
 
     public bool IsChecked
     {

@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:customControls="clr-namespace:UVTQuestions.CustomControls"
              xmlns:local="clr-namespace:UVTQuestions"
+             
              x:Class="UVTQuestions.MainPage">
 
-        <Grid RowDefinitions="*, Auto" ColumnDefinitions="*,*" HorizontalOptions="Center" VerticalOptions="FillAndExpand" x:DataType="local:MainViewModel">                
+        <Grid RowDefinitions="20, *" ColumnDefinitions="*,*">
+            <Label Grid.Row="0" Text="{Binding UserMessage}" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Grid.ColumnSpan="2"/>
 
             <customControls:QuestionView
-                Answered="{Binding Answered}"
-                Grid.Row="0"
-                Grid.ColumnSpan="2"
-                QuestionTitle="{Binding CurrentQuestion.QuestionTitle}"
-                Answer1="{Binding CurrentQuestion.Answer1}"
-                Answer2="{Binding CurrentQuestion.Answer2}"
-                Answer3="{Binding CurrentQuestion.Answer3}"
-                Answer4="{Binding CurrentQuestion.Answer4}"/>
-            
-            <Button Grid.Column="0" HeightRequest="50" VerticalOptions="EndAndExpand" CornerRadius="0" Margin="0,0,1,0" Grid.Row="1" Text="Show hint"/>
-            <Button Grid.Column="1" HeightRequest="50" VerticalOptions="EndAndExpand" CornerRadius="0" Margin="1,0,0,0" Grid.Row="1"
+                        Answered="{Binding Answered}"
+                        Margin="0,0,0,50"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Question="{Binding CurrentQuestion}"/>
+
+            <Button Grid.Column="0" HeightRequest="50" VerticalOptions="End" CornerRadius="0" Margin="0,0,1,0" Grid.Row="1"
+                            Command="{Binding NextQuestionCommand}" Text="Next question"/>
+            <Button Grid.Column="1" HeightRequest="50" VerticalOptions="End" CornerRadius="0" Margin="1,0,0,0" Grid.Row="1"
                     Command="{Binding AnswerQuestionCommand}" Text="Answer"/>
         </Grid>
 
