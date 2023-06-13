@@ -1,5 +1,5 @@
 [
-   {
+    {
         "QuestionTitle": "Care dintre urmatoarele afirmatii este/sunt adevarata/adevarate pentru algoritmul corespunzator functiei de mai jos (se considera ca x este un tablou unidimensional cu n elemente)?",
         "Answer1": "Algoritmul returneaza numarul de elemente pozitive din x",
         "Answer2": "Algoritmul returneaza numarul de elemente din cea mai lunga subsecventa cu elemente pozitive din x",
@@ -32,7 +32,7 @@
         "Category": "Algoritmi si structuri de date"
     },
     {
-        "QuestionTitle": "Se consideră un tablou unidimensional, a[0..n-1], cu n = 1010 valori numerice şi se pune problema determinării primelor 10 valori în ordine crescătoare. Care dintre următoarele abordări asigură faptul că a[0..9] conține cele mai mici 10 elemente în ordine crescătoare şi este mai eficientă?",
+        "QuestionTitle": "Se consideră un tablou unidimensional, a[0..n-1], cu n = 10^10 valori numerice şi se pune problema determinării primelor 10 valori în ordine crescătoare. Care dintre următoarele abordări asigură faptul că a[0..9] conține cele mai mici 10 elemente în ordine crescătoare şi este mai eficientă?",
         "Answer1": "Se sortează a[0..n-1] crescător folosind algoritmul quicksort",
         "Answer2": "Se sortează parțial a aplicând algoritmul de sortare prin inserție în care ciclul exterior for i in range(1,n) se înlocuiește cu for i in range(1,11)",
         "Answer3": "Se sortează parțial a aplicând algoritmul de sortare prin selecție în care ciclul exterior for i in range(0,n-1) se înlocuiește cu for i in range(0,10)",
@@ -226,7 +226,7 @@
         "Category": "Algoritmi si structuri de date"
     },
     {
-        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2m - 1] cu două atribute suplimentare: capacitatea A.length = 2m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. Formula ce defineşte relaţia bunic(i,j) în un min-heap binar este:",
+        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2^m - 1] cu două atribute suplimentare: capacitatea A.length = 2^m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. Formula ce defineşte relaţia bunic(i,j) în un min-heap binar este:",
         "Answer1": "(4·j+3≤i)∧(i≤4·j+6)",
         "Answer2": "(4·i+3≤j)∧(j≤4·i+6)",
         "Answer3": "j = ⌊i/4⌋",
@@ -236,7 +236,7 @@
         "Category": "Algoritmi si structuri de date"
     },
     {
-        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2m - 1] cu două atribute suplimentare: capacitatea A.length = 2m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. Numărul maxim de noduri în un min-heap binar cu adâncimea h este:",
+        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2^m - 1] cu două atribute suplimentare: capacitatea A.length = 2^m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. Numărul maxim de noduri în un min-heap binar cu adâncimea h este:",
         "Answer1": "2^(h+1) - 1",
         "Answer2": "2^h",
         "Answer3": "h^2 - 1",
@@ -245,7 +245,7 @@
         "Category": "Algoritmi si structuri de date"
     },
     {
-        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2m - 1] cu două atribute suplimentare: capacitatea A.length = 2m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. (1) Dacă A este un min-heap binar atunci A este sortat în ordinea crescătoare a cheilor din noduri? (2) Dacă A este sortat în ordinea crescătoare a cheilor din noduri atunci A este un min-heap binar?",
+        "QuestionTitle": "Un min-heap binar este o structură de date care modelează un arbore binar aproape complet care are proprietatea de heap: Pentru orice nod N, dacă P este părintele lui N atunci cheia lui P este mai mică decât cheia lui N. Implementarea cu tablou a unui min-heap binar cu n noduri este un tablou A[0..2^m - 1] cu două atribute suplimentare: capacitatea A.length = 2^m - 1 şi mărimea A.size = n, astfel încât A.size ≤ A.length. Elementele din nodurile min-heap-ului binar sunt reţinute în primele n elemente ale lui A: rădăcina este reţinută în A[0], iar dacă N este fiul stâng (resp. drept) al unui nod P reţinut în A[i] atunci N este reţinut în A[2·i+1] (resp. A[2·i+2]). Pentru 0 ≤ i,j < n definim relaţia bunic(i,j) dacă A[j] reţine părintele părintelui nodului din A[i]. (1) Dacă A este un min-heap binar atunci A este sortat în ordinea crescătoare a cheilor din noduri? (2) Dacă A este sortat în ordinea crescătoare a cheilor din noduri atunci A este un min-heap binar?",
         "Answer1": "(1) fals (2) adevărat",
         "Answer2": "(1) fals (2) fals",
         "Answer3": "(1) adevărat (2) adevărat",
@@ -300,7 +300,7 @@
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
-        "QuestionTitle": "In internet, format din reţele interconectate de calculatoare, fiecărei conexiuni de reţea dintr-un calculator i se atribuie o adresă internet. Protocolul IPv4 prevede că o adresă internet este un şir de 32 biţi, format din un număr de reţea (netid) urmat de un număr de gazdă (hostid). Sunt 3 tipuri de adrese internet: Câte adrese IPv4 diferite sunt disponibile pentru conexiunile de reţea din internet?",
+        "QuestionTitle": "In internet, format din reţele interconectate de calculatoare, fiecărei conexiuni de reţea dintr-un calculator i se atribuie o adresă internet. Protocolul IPv4 prevede că o adresă internet este un şir de 32 biţi, format din un număr de reţea (netid) urmat de un număr de gazdă (hostid). Sunt 3 tipuri de adrese internet: (vezi imagine). Câte adrese IPv4 diferite sunt disponibile pentru conexiunile de reţea din internet?",
         "Answer1": "2^29 ·2^30 ·2^31",
         "Answer2": "2^31",
         "Answer3": "7·2^29",
@@ -310,7 +310,7 @@
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
-        "QuestionTitle": "Fie reţeaua de transport G cu sursa s şi destinaţia t: Care este valoarea fluxului maxim în G?",
+        "QuestionTitle": "Fie reţeaua de transport G cu sursa s şi destinaţia t: (vezi imagine). Care este valoarea fluxului maxim în G?",
         "Answer1": "8",
         "Answer2": "5",
         "Answer3": "6",
@@ -320,7 +320,7 @@
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
-        "QuestionTitle": "Fie graful ponderat: Ce greutate totală are arborele minim de acoperire al acestui graf?",
+        "QuestionTitle": "Fie graful ponderat: (vezi imagine). Ce greutate totală are arborele minim de acoperire al acestui graf?",
         "Answer1": "229",
         "Answer2": "216",
         "Answer3": "230",
@@ -443,7 +443,7 @@
         "Category": "Teoria grafurilor si combinatorica"
     },
     {
-        "QuestionTitle": "Consideraţi, în logica predicatelor, limbajul care conţine următoarele simboluri: Care din următoarele sunt termeni peste acest limbaj?",
+        "QuestionTitle": "Consideraţi, în logica predicatelor, limbajul care conţine următoarele simboluri: (vezi imagine) Care din următoarele sunt termeni peste acest limbaj?",
         "Answer1": "(0*x)-1",
         "Answer2": "1+(z*x)<0",
         "Answer3": "x+((-1)*0)",
@@ -513,7 +513,7 @@
         "Category": "Logica Computationala"
     },
     {
-        "QuestionTitle": "Există o formulă logic echivalenta cu ..img.. care conţine doar conectori propoziţionali din mulţimea: ... unde | este conectorul NŞI (i.e. P |Q = ¬(P ∧ Q)).",
+        "QuestionTitle": "Există o formulă logic echivalenta cu (vezi imagine) care conţine doar conectori propoziţionali din mulţimea: ..(vezi raspunsuri)... unde | este conectorul NŞI (i.e. P |Q = ¬(P ∧ Q)).",
         "Answer1": "{¬,v}",
         "Answer2": "{v,∧}",
         "Answer3": "{|}",
@@ -779,7 +779,7 @@
         "Category": "Limbajul Python"
     },
     {
-        "QuestionTitle": "Fie următoarea secvență de cod: Cum putem apela metoda salut() din clasa Persoana?",
+        "QuestionTitle": "Fie următoarea secvență de cod: (vezi imagine) Cum putem apela metoda salut() din clasa Persoana?",
         "Answer1": "Persoana.salut(prof1)",
         "Answer2": "prof1.salut()",
         "Answer3": "super(prof1).salut()",
@@ -1096,7 +1096,7 @@
         "Category": "Limbajul Java"
     },
     {
-        "QuestionTitle": "Se consideră următoarea secventă de cod: Care din variantele de mai jos instantiază şi lansează în executie un fir de execuţie?",
+        "QuestionTitle": "Se consideră următoarea secventă de cod: (vezi imagine) Care din variantele de mai jos instantiază şi lansează în executie un fir de execuţie?",
         "Answer1": "new Thread()).start()",
         "Answer2": "a.start( )",
         "Answer3": "a.run( )",
@@ -1106,7 +1106,7 @@
         "Category": "Limbajul Java"
     },
     {
-        "QuestionTitle": "Considerând următoarea secventă de cod, stabiliţi care este ordinea execut,iei (in ipoteza că o clasă are un constructor, o metodă, un bloc static si un bloc de instantă):",
+        "QuestionTitle": "Considerând următoarea secventă de cod, stabiliţi care este ordinea execuției (in ipoteza că o clasă are un constructor, o metodă, un bloc static si un bloc de instantă):",
         "Answer1": "instance block; method; static block; constructor;",
         "Answer2": "static block; instance block; constructor; method;",
         "Answer3": "method; constructor; instance block; static block;",
@@ -1117,7 +1117,7 @@
         "Category": "Limbajul Java"
     },
     {
-        "QuestionTitle": "Se consideră următoarea secventă de cod: Care din variantele de mai jos se va afișa:",
+        "QuestionTitle": "Se consideră următoarea secventă de cod: (vezi imagine) Care din variantele de mai jos se va afișa:",
         "Answer1": "[mere,pere,banane,kiwi,ananas,portocale]",
         "Answer2": "[ananas,banane,kiwi,mere,pere,portocale]",
         "Answer3": "[Ljava.lang.String;@15db9742]",
@@ -1133,7 +1133,7 @@
 "Answer3": "depanarea erorilor",
 "Answer4": "inspectări ale software-lui",
 "Answer5": "testarea în vederea descoperirii existenței erorilor",
-"Answer6": "testarea faptului că software-ul îndeplines,te cerint,ele utilizator",
+"Answer6": "testarea faptului că software-ul îndeplinește cerint,ele utilizator",
 "Answer": "a,d,e",
 "Category": "Proiectarea aplicațiilor software"
 },
@@ -1815,6 +1815,5 @@
 "Answer4": "Control Sense Multiple Access with Collision Direction",
 "Answer": "c",
 "Category": "Rețele de calculatoare"
-}	
-    
+}	  
 ]
