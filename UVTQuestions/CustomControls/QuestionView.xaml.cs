@@ -48,8 +48,8 @@ public partial class QuestionView : ContentView
             if (check.IsChecked)
             {
                 checkedAnswers.Add((answer).ToString());
-                answer++;
             }
+            answer++;
         }
 
         Answered = string.Join(',', checkedAnswers);
